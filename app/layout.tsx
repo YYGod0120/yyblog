@@ -5,15 +5,15 @@ import Footer from "@/components/Footer";
 const roboto = localFont({
   src: [
     {
-      path: "./fonts/LXGWWenKailite-Regular.ttf",
+      path: "../public/fonts/LXGWWenKailite-Regular.ttf",
       style: "regular",
     },
     {
-      path: "./fonts/LXGWWenKaiLite-Light.ttf",
+      path: "../public/fonts/LXGWWenKaiLite-Light.ttf",
       style: "light",
     },
     {
-      path: "./fonts/LXGWWenKaiLite-Bold.ttf",
+      path: "../public/fonts/LXGWWenKaiLite-Bold.ttf",
       style: "bold",
     },
   ],

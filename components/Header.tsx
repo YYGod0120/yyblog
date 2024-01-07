@@ -1,3 +1,4 @@
+import { readFile } from "@/utils/extractMd";
 import Link from "next/link";
 import React from "react";
 type Tag = {
@@ -5,6 +6,8 @@ type Tag = {
   href: string;
 };
 export default function Header() {
+  readFile();
+
   const tags: Tag[] = [
     {
       name: "Cateories",
