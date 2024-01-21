@@ -1,0 +1,35 @@
+
+blockquote {
+  margin-left: 0;
+  border-left: 4px solid #bac2cb;
+  padding-left: 12px;
+  color: #4e5969;
+}
+ul {
+  margin: 0;
+  padding-left: 30px;
+}
+a {
+  text-decoration: none; /* 移除下划线 */
+  color: #1d9bf0; /* 使用继承的颜色 */
+  cursor: pointer; /* 修改鼠标样式为指针 */
+  outline: none; /* 移除默认的焦点边框 */
+}
+p {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+a:hover{
+  color:#0c7ad8
+}
