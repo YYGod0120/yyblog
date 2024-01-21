@@ -15,7 +15,8 @@ categories: 项目
 
 - git
 - 团队协作
-  [项目地址](http://fe-prod.redrock.cqupt.edu.cn/venue-application-backstage/)
+
+[项目地址](http://fe-prod.redrock.cqupt.edu.cn/venue-application-backstage/)
 
 # 技术栈
 
