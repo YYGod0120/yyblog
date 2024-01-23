@@ -3,16 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "ybg compile && next dev ",
+    "dev": "ybg upload && ybg compile && next dev ",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "upload": "node -r dotenv/config ./script/upload.js"
   },
   "dependencies": {
+    "@vercel/postgres": "^0.5.1",
     "dayjs": "^1.11.10",
+    "dotenv": "^16.3.2",
+    "gray-matter": "^4.0.3",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-loading-skeleton": "^3.3.1",
     "react-syntax-highlighter": "^15.5.0"
   },
   "devDependencies": {

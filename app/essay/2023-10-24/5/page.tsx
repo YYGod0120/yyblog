@@ -9,10 +9,10 @@
       return (
         <div className=" mt-8 bg-white w-[60vw] flex flex-col items-start text-lg">
           <span className="text-4xl text-left px-24 pt-12 text-visit-font font-bold">
-            ∠痛局
+            交痛局
           </span>
           <span className=" text-[#86909C] px-24 pt-5 text-xl mb-5">
-            Categories: 项目 &nbsp; &nbsp; 2023-10-24
+            Categories: Project &nbsp; &nbsp; 2023-10-24
           </span>
           <div className="flex text-start flex-col pb-12 px-24 w-[50vw]">
           <h1>丰都县交通局</h1>

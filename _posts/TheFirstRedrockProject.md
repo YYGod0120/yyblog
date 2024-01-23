@@ -1,12 +1,8 @@
 ---
-layout: the
 title: TheFirstRedrockProject
-date: 2023-09-18 22:30:16
-tags:
-  - 前端
-  - 项目
-excerpt: 第一个红岩项目
-categories: 项目
+date: 2023-09-18
+excerpt: The First Project,the first step
+categories: Porject
 ---
 
 > 第一个团队合作项目
