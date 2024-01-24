@@ -1,7 +1,7 @@
 ---
 title: DataHub
 date: 2023-12-01
-categories: Porject
+categories: Project
 excerpt: 红岩网校数据中台
 ---
 

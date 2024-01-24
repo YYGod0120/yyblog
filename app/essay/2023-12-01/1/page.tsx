@@ -12,7 +12,7 @@
             DataHub
           </span>
           <span className=" text-[#86909C] px-24 pt-5 text-xl mb-5">
-            Categories: Porject &nbsp; &nbsp; 2023-12-01
+            Categories: Project &nbsp; &nbsp; 2023-12-01
           </span>
           <div className="flex text-start flex-col pb-12 px-24 w-[50vw]">
           <h1>数据中台</h1>

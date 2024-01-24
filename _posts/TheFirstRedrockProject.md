@@ -2,7 +2,7 @@
 title: TheFirstRedrockProject
 date: 2023-09-18
 excerpt: The First Project,the first step
-categories: Porject
+categories: Project
 ---
 
 > 第一个团队合作项目
