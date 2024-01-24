@@ -17,6 +17,10 @@ export default function Paginate({ pages, nowPage, setPage }: Paginate) {
           className="hover:font-bold"
           onClick={() => {
             setPage(nowPage - 1);
+            window.scrollTo({
+              top: 0,
+              behavior: "auto", // 可以选择平滑滚动或直接滚动
+            });
           }}
         >
           {"＜"}
@@ -30,6 +34,10 @@ export default function Paginate({ pages, nowPage, setPage }: Paginate) {
                 className={index !== nowPage ? "hover:font-bold" : "font-bold"}
                 onClick={() => {
                   setPage(index);
+                  window.scrollTo({
+                    top: 0,
+                    behavior: "auto", // 可以选择平滑滚动或直接滚动
+                  });
                 }}
               >
                 {index + 1}
@@ -42,6 +50,10 @@ export default function Paginate({ pages, nowPage, setPage }: Paginate) {
           className="hover:font-bold"
           onClick={() => {
             setPage(nowPage + 1);
+            window.scrollTo({
+              top: 0,
+              behavior: "auto", // 可以选择平滑滚动或直接滚动
+            });
           }}
         >
           {"＞"}
