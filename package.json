@@ -6,7 +6,8 @@
     "dev": "ybg compile && next dev ",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "upload": "node -r dotenv/config ./scripts/upload.js"
   },
   "dependencies": {
     "dayjs": "^1.11.10",
