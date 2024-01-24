@@ -11,7 +11,7 @@ export default function Paginate({ pages, nowPage, setPage }: Paginate) {
 
   const pagesArray = Array.from({ length: pageItems }, (_, index) => index);
   return (
-    <div className="text-2xl mt-5 mb-5 flex flex-row items-center justify-center space-x-5 cursor-pointer ">
+    <div className="text-2xl mt-5  flex flex-row items-center justify-center space-x-5 cursor-pointer ">
       {nowPage !== 0 ? (
         <div
           className="hover:font-bold"
