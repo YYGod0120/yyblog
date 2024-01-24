@@ -1,10 +1,7 @@
 ---
 title: DataHub
-date: 2023-12-01 20:35:44
-tags:
-  - 前端
-  - 项目
-categories: 项目
+date: 2023-12-01
+categories: Porject
 excerpt: 红岩网校数据中台
 ---
 

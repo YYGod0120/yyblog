@@ -1,11 +1,8 @@
 ---
 title: RSC
-date: 2023-12-04 10:30:41
-tags:
-  - 前端
-  - React
-categories: 技术
-excerpt: What is RSC
+date: 2023-12-04
+categories: Techology
+excerpt: What is RSC, and how it works
 ---
 
 推荐阅读：

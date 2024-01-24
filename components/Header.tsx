@@ -30,7 +30,10 @@ export default function Header() {
   return (
     <div className="bg-white w-full flex items-center justify-center h-16">
       <div className=" flex w-[60vw] justify-between text-2xl ">
-        <Link href="/" className="text-visit-font font-bold no-underline">
+        <Link
+          href="/"
+          className="text-visit-font font-bold no-underline hover:text-visit-font"
+        >
           YYGod0120
         </Link>
         <div className="flex justify-between text-xl w-[28vw] text-default-font">
