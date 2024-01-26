@@ -1,10 +1,10 @@
 import React from "react";
 import { data } from "../../app/lib/fileData";
-import { countCategories } from "@/utils/countCategories";
+import { countCategories } from "@/utils/Categories";
 export default function Tags() {
   const tags = countCategories(data);
   return (
-    <div className="mt-5 mb-5 flex flex-row ">
+    <div className="mt-5 mb-5 flex flex-row cursor-default">
       {Object.keys(tags).map((tag, index) => {
         return (
           <div key={index} className="  text-white mr-4 ">

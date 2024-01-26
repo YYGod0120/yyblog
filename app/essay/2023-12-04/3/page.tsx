@@ -7,14 +7,14 @@
     import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
     export default function Page() {
       return (
-        <div className=" mt-8 bg-white w-[60vw] flex flex-col items-start text-lg">
+        <div className=" mt-8 bg-white w-[50vw] flex flex-col items-start text-lg">
           <span className="text-4xl text-left px-24 pt-12 text-visit-font font-bold">
             RSC
           </span>
           <span className=" text-[#86909C] px-24 pt-5 text-xl mb-5">
             Categories: Techology &nbsp; &nbsp; 2023-12-04
           </span>
-          <div className="flex text-start flex-col pb-12 px-24 w-[50vw]">
+          <div className="flex text-start flex-col pb-12 px-24 w-[40vw]">
           <p>推荐阅读：</p>
 <p><a href="https://chentsulin.medium.com/react-%E6%96%B0%E6%A6%82%E5%BF%B5-server-components-d632f9a18463">React 新概念-服务器组件</a></p>
 <p><a href="https://www.plasmic.app/blog/how-react-server-components-work">How React server components work: an in-depth guide</a></p>
