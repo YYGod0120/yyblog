@@ -1,9 +1,8 @@
 ---
-layout: the
 title: TheFirstRedrockProject
 date: 2023-09-18
-excerpt: 第一个红岩项目
-categories: Project
+excerpt: The First Project,the first step
+categories: Porject
 ---
 
 > 第一个团队合作项目

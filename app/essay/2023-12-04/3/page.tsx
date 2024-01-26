@@ -12,7 +12,7 @@
             RSC
           </span>
           <span className=" text-[#86909C] px-24 pt-5 text-xl mb-5">
-            Categories: 技术 &nbsp; &nbsp; 2023-12-04
+            Categories: Techology &nbsp; &nbsp; 2023-12-04
           </span>
           <div className="flex text-start flex-col pb-12 px-24 w-[50vw]">
           <p>推荐阅读：</p>

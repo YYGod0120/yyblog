@@ -12,7 +12,7 @@
             TheFirstRedrockProject
           </span>
           <span className=" text-[#86909C] px-24 pt-5 text-xl mb-5">
-            Categories: 项目 &nbsp; &nbsp; 2023-09-19
+            Categories: Porject &nbsp; &nbsp; 2023-09-18
           </span>
           <div className="flex text-start flex-col pb-12 px-24 w-[50vw]">
           <blockquote>

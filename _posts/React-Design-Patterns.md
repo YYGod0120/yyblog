@@ -1,11 +1,12 @@
 ---
 title: React-Design-Patterns
 date: 2023-11-18
-categories: Techology
 excerpt: React 设计模式(译)
+categories: Techology
 ---
 
 React 设计模式(译)
+
 [原文链接](https://dev.to/refine/react-design-patterns-230o)
 
 # 介绍

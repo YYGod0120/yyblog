@@ -12,11 +12,11 @@
             React-Design-Patterns
           </span>
           <span className=" text-[#86909C] px-24 pt-5 text-xl mb-5">
-            Categories: undefined &nbsp; &nbsp; 2023-11-18
+            Categories: Techology &nbsp; &nbsp; 2023-11-18
           </span>
           <div className="flex text-start flex-col pb-12 px-24 w-[50vw]">
-          <p>React 设计模式(译)
-<a href="https://dev.to/refine/react-design-patterns-230o">原文链接</a></p>
+          <p>React 设计模式(译)</p>
+<p><a href="https://dev.to/refine/react-design-patterns-230o">原文链接</a></p>
 <h1>介绍</h1>
 <p>React 开发人员可以通过使用设计模式来节省时间和精力，这些模式提供了一种使用经过测试和信任的解决方案解决问题的快速方法。它们使内聚模块具有较低的耦合性，这反过来又帮助 React 开发人员创建可维护、可扩展和高效的应用程序。在本文中，我们将探讨 React 设计模式，并研究它们如何改进 React 应用程序的开发。</p>
 <h1>容器和表示模式</h1>
