@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { data } from "./lib/fileData";
-import "react-loading-skeleton/dist/skeleton.css";
 import Paginate from "@/components/paginate";
 import { useState } from "react";
 
@@ -11,7 +10,7 @@ export default function Home() {
     <div className="mt-8">
       {data.slice(pageNumber * 5, (pageNumber + 1) * 5).map((file, index) => (
         <div
-          className="bg-white w-[50vw] cursor-pointer mb-[30px] text-start"
+          className="bg-white w-[53vw] cursor-pointer mb-[30px] text-start shadow-lg rounded"
           key={file.title || index}
         >
           <Link

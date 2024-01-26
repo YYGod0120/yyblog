@@ -7,14 +7,14 @@
     import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
     export default function Page() {
       return (
-        <div className=" mt-8 bg-white w-[50vw] flex flex-col items-start text-lg">
+        <div className=" mt-8 bg-white w-[53vw] flex flex-col items-start text-lg shadow-lg rounded-sm">
           <span className="text-4xl text-left px-24 pt-12 text-visit-font font-bold">
             React-Design-Patterns
           </span>
           <span className=" text-[#86909C] px-24 pt-5 text-xl mb-5">
             Categories: Techology &nbsp; &nbsp; 2023-11-18
           </span>
-          <div className="flex text-start flex-col pb-12 px-24 w-[40vw]">
+          <div className="flex text-start flex-col pb-12 px-24 w-[43vw]">
           <p>React 设计模式(译)</p>
 <p><a href="https://dev.to/refine/react-design-patterns-230o">原文链接</a></p>
 <h1>介绍</h1>

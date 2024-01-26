@@ -7,14 +7,14 @@
     import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
     export default function Page() {
       return (
-        <div className=" mt-8 bg-white w-[50vw] flex flex-col items-start text-lg">
+        <div className=" mt-8 bg-white w-[53vw] flex flex-col items-start text-lg shadow-lg rounded-sm">
           <span className="text-4xl text-left px-24 pt-12 text-visit-font font-bold">
             TheFirstRedrockProject
           </span>
           <span className=" text-[#86909C] px-24 pt-5 text-xl mb-5">
             Categories: Project &nbsp; &nbsp; 2023-09-18
           </span>
-          <div className="flex text-start flex-col pb-12 px-24 w-[40vw]">
+          <div className="flex text-start flex-col pb-12 px-24 w-[43vw]">
           <blockquote>
 <p>第一个团队合作项目</p>
 </blockquote>

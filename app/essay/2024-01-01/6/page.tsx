@@ -7,14 +7,14 @@
     import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
     export default function Page() {
       return (
-        <div className=" mt-8 bg-white w-[50vw] flex flex-col items-start text-lg">
+        <div className=" mt-8 bg-white w-[53vw] flex flex-col items-start text-lg shadow-lg rounded-sm">
           <span className="text-4xl text-left px-24 pt-12 text-visit-font font-bold">
             我的2023
           </span>
           <span className=" text-[#86909C] px-24 pt-5 text-xl mb-5">
             Categories: Life &nbsp; &nbsp; 2024-01-01
           </span>
-          <div className="flex text-start flex-col pb-12 px-24 w-[40vw]">
+          <div className="flex text-start flex-col pb-12 px-24 w-[43vw]">
           <blockquote>
 <p>这是我的第一篇年末总结。</p>
 </blockquote>

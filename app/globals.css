@@ -16,4 +16,8 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #d4d5dd;
+  margin: 0;
+}
+::-webkit-scrollbar {
+  display: none;
 }
