@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import GhostPointer from "./GhostPointer";
 type Tag = {
   name: string;
   href: string;
@@ -15,10 +16,6 @@ export default function Header() {
       href: "/about",
     },
     {
-      name: "Friends",
-      href: "/friends",
-    },
-    {
       name: "GitHub",
       href: "https://github.com/YYGod0120",
     },
@@ -28,8 +25,8 @@ export default function Header() {
     },
   ];
   return (
-    <div className="bg-white w-[100vw] flex items-center justify-center h-16 ">
-      <div className=" flex w-[53vw] justify-between text-2xl ">
+    <div className="bg-white w-[100vw] flex flex-col justify-center items-center ">
+      <div className=" flex w-[53vw] justify-between text-2xl felx-row h-[6vh] items-center">
         <Link
           href="/"
           className="text-visit-font font-bold no-underline hover:text-visit-font"
@@ -50,6 +47,7 @@ export default function Header() {
           })}
         </div>
       </div>
+      <GhostPointer></GhostPointer>
     </div>
   );
 }

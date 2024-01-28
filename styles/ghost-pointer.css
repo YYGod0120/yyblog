@@ -1,0 +1,97 @@
+/* 定义变量 */
+:root {
+  --bg-color: #161616;
+}
+
+/* 定义 .ghost 类的样式 */
+.ghost {
+  position: absolute;
+  z-index: 1;
+  transform-origin: center;
+  width: 90px;
+  margin: 20px 0 0 -45px;
+}
+
+/* 定义 .ghost__eyes 和 .ghost__mouth 的样式 */
+.ghost__eyes,
+.ghost__mouth {
+  position: absolute;
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  top: 34px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50px;
+  background: var(--bg-color);
+  margin-left: -20px;
+  transform-origin: center;
+}
+
+/* 设置 .ghost__eyes 的样式 */
+.ghost__eyes {
+  box-shadow: 40px 0 0 var(--bg-color);
+}
+
+/* 设置 .ghost__mouth 的样式 */
+.ghost__mouth {
+  margin: 0;
+  top: 60px;
+  transform: scale(0);
+  border-radius: 20px 20px 12px 12px;
+  width: 20px;
+  transform-origin: center bottom;
+  overflow: hidden;
+}
+
+/* 定义 .ghost__tail 的样式 */
+.ghost__tail {
+  position: absolute;
+  z-index: -1;
+  top: 82px;
+  height: 55px;
+  width: 100%;
+  filter: url(#goo);
+}
+
+/* 设置 .ghost__tail::before 的样式 */
+.ghost__tail:before {
+  content: "";
+  background: #fff;
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  border-radius: 40px 40px 5px 5px;
+}
+
+/* 设置 .ghost__rip 的样式 */
+.ghost__rip {
+  width: 15px;
+  height: 28px;
+  background: #fff;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  box-shadow: -62px 0 0 #fff, -31px 0 0 #fff, 31px 0 0 #fff, 62px 0 0 #fff,
+    93px 0 0 #fff;
+  border-radius: 50%;
+  animation: ghost-rips 1.2s linear infinite;
+}
+
+/* 定义关键帧动画 ghost-rips */
+@keyframes ghost-rips {
+  0% {
+    left: 0;
+    top: 12px;
+  }
+  50% {
+    left: 31px;
+    top: 20px;
+  }
+  100% {
+    left: 62px;
+    top: 12px;
+  }
+}
