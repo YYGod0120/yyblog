@@ -1,9 +1,13 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import "../styles/ghost-pointer.css";
 import Script from "next/script";
-export default function GhostPointer() {
+type GhostPointerProps = {
+  children?: ReactNode;
+};
+
+export function GhostPointer({ children }: GhostPointerProps) {
   return (
-    <div className="h-[28vh] bg-[#2C3E50] w-[100vw]">
+    <div className="h-[250px] bg-[#2C3E50] w-[100vw]">
       <div id="ghost" className="ghost">
         <div className="ghost__head">
           <div className="ghost__eyes"></div>
@@ -13,6 +17,7 @@ export default function GhostPointer() {
           <div className="ghost__rip"></div>
         </div>
       </div>
+      {children}
 
       <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
         <defs>
@@ -35,8 +40,9 @@ export default function GhostPointer() {
           </filter>
         </defs>
       </svg>
+
       <Script id="ghost-cursor">
-        {`let mouse = { x: window.innerWidth / 2, y: window.innerHeight*0.19, dir: "" };
+        {`let mouse = { x: window.innerWidth / 2, y: 150, dir: "" };
 let clicked = false;
 
 const getMouse = (e) => {
@@ -44,8 +50,8 @@ const getMouse = (e) => {
 let mouseY = e.clientY || e.pageY || 0 || window.innerHeight / 2;
 
 // 设置最大和最小高度限制
-const maxY = window.innerHeight*0.19;
-const minY = window.innerHeight*0.01;
+const maxY = 170;
+const minY = 0;
 
 // 限制鼠标垂直坐标在最大值和最小值之间
 mouseY = Math.max(minY, Math.min(maxY, mouseY));
@@ -113,7 +119,7 @@ class GhostFollow {
       "translate(" +
       this.pos.x +
       "px, " +
-      this.pos.y +
+      this.pos.y + 
       "px) scale(.5) skew(" +
       this.skewX +
       "deg) rotate(" +

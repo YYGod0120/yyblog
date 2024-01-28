@@ -1,6 +1,11 @@
+"use client";
+
+import { usePathname, useSearchParams } from "next/navigation";
 import Link from "next/link";
-import React from "react";
-import GhostPointer from "./GhostPointer";
+import React, { useEffect, useState } from "react";
+import { GhostPointer } from "./GhostPointer";
+import { splitPathname } from "@/utils/dealPathname";
+import { MyTypeWrite } from "./TypeWrite";
 type Tag = {
   name: string;
   href: string;
@@ -26,7 +31,7 @@ export default function Header() {
   ];
   return (
     <div className="bg-white w-[100vw] flex flex-col justify-center items-center ">
-      <div className=" flex w-[53vw] justify-between text-2xl felx-row h-[6vh] items-center">
+      <div className=" flex w-[53vw] justify-between text-2xl felx-row h-[45px] items-center">
         <Link
           href="/"
           className="text-visit-font font-bold no-underline hover:text-visit-font"
@@ -47,7 +52,9 @@ export default function Header() {
           })}
         </div>
       </div>
-      <GhostPointer></GhostPointer>
+      <GhostPointer>
+        <MyTypeWrite />
+      </GhostPointer>
     </div>
   );
 }
