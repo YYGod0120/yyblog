@@ -7,14 +7,14 @@
     import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
     export default function Page() {
       return (
-        <div className=" mt-8 bg-white w-[53vw] flex flex-col items-start text-lg shadow-lg rounded-sm">
-          <span className="text-4xl text-left px-24 pt-12 text-visit-font font-bold">
+        <div className=" mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">
+          <span className="text-4xl text-left px-20 pt-12 text-visit-font font-bold">
             长沙之旅
           </span>
-          <span className=" text-[#86909C] px-24 pt-5 text-xl mb-5">
+          <span className=" text-[#86909C] px-20 pt-5 text-xl mb-5">
             Categories: Life &nbsp; &nbsp; 2023-10-03
           </span>
-          <div className="flex text-start flex-col pb-12 px-24 w-[43vw]">
+          <div className="flex text-start flex-col pb-12 px-20 w-[740px]">
           <blockquote>
 <p>下次记得国庆多呆一天</p>
 </blockquote>

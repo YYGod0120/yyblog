@@ -2,7 +2,7 @@ import React from "react";
 
 export default function page() {
   return (
-    <div className=" bg-white px-14 py-10 flex flex-col text-start mt-8 shadow-lg rounded w-[53vw]">
+    <div className=" bg-white px-14 py-10 flex flex-col text-start mt-8 shadow-lg rounded ">
       <div className="text-3xl mb-5 font-bold cursor-default">About me</div>
       <div className="ml-3 text-lg">
         <li className="mb-5">
