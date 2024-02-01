@@ -7,13 +7,13 @@ import Link from "next/link";
 export default function Categories() {
   const tags = countCategories(data);
   return (
-    <div className="w-[53vw]">
+    <div>
       <Tags />
       {Object.keys(tags).map((tag, index) => {
         return (
           <div
             key={index}
-            className="w-full bg-white px-12 py-6 flex flex-col text-start mt-8 shadow-lg rounded"
+            className=" bg-white px-12 py-6 flex flex-col text-start mt-8 shadow-lg rounded"
           >
             <div className="text-2xl mb-5 font-bold cursor-default">{tag}</div>
             {data
