@@ -1,21 +1,22 @@
 
-    import "../../essay.css";
-    import Image from "next/image";
-    // @ts-ignore
-      import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-    // @ts-ignore
-    import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
-    export default function Page() {
-      return (
-        <div className="mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">
-          <span className="text-4xl text-left lg:px-20 md:px-[2.5vw] px-4 pt-12 text-visit-font font-bold">
-            交通局
-          </span>
-          <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
-            Categories: Project &nbsp; &nbsp; 2023-10-24
-          </span>
-          <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
-          <h1>丰都县交通局</h1>
+import "../../essay.css";
+import Image from "next/image";
+// @ts-ignore
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+// @ts-ignore
+import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
+
+export default function Page() {
+  return (
+    <div className="mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">
+      <span className="text-4xl text-left lg:px-20 md:px-[2.5vw] px-4 pt-12 text-visit-font font-bold">
+        交通局
+      </span>
+      <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
+        Categories: Project &nbsp; &nbsp; 2023-10-24
+      </span>
+      <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
+        <h1>丰都县交通局</h1>
 <blockquote>
 <p>记得下次好好评审项目以及拉黑胡*</p>
 </blockquote>
@@ -335,8 +336,7 @@ function renderRoutes\(locale\: \{ \[x\: string\]\: any \}\) \{
 <p>对这种路由布局理解提高了一点
 帮他们写 12306 的时候，学会了抓包工具 Fiddler Classic。<del>说不定哪天能写一个有趣的东西</del></p>
 
-          </div>
-          </div>
-        );
-      }
-    
+      </div>
+    </div>
+  );
+}

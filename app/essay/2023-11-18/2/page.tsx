@@ -1,21 +1,22 @@
 
-    import "../../essay.css";
-    import Image from "next/image";
-    // @ts-ignore
-      import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-    // @ts-ignore
-    import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
-    export default function Page() {
-      return (
-        <div className="mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">
-          <span className="text-4xl text-left lg:px-20 md:px-[2.5vw] px-4 pt-12 text-visit-font font-bold">
-            React-Design-Patterns
-          </span>
-          <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
-            Categories: Techology &nbsp; &nbsp; 2023-11-18
-          </span>
-          <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
-          <p>React 设计模式(译)</p>
+import "../../essay.css";
+import Image from "next/image";
+// @ts-ignore
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+// @ts-ignore
+import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
+
+export default function Page() {
+  return (
+    <div className="mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">
+      <span className="text-4xl text-left lg:px-20 md:px-[2.5vw] px-4 pt-12 text-visit-font font-bold">
+        React-Design-Patterns
+      </span>
+      <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
+        Categories: Techology &nbsp; &nbsp; 2023-11-18
+      </span>
+      <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
+        <p>React 设计模式(译)</p>
 <p><a href="https://dev.to/refine/react-design-patterns-230o">原文链接</a></p>
 <h1>介绍</h1>
 <p>React 开发人员可以通过使用设计模式来节省时间和精力，这些模式提供了一种使用经过测试和信任的解决方案解决问题的快速方法。它们使内聚模块具有较低的耦合性，这反过来又帮助 React 开发人员创建可维护、可扩展和高效的应用程序。在本文中，我们将探讨 React 设计模式，并研究它们如何改进 React 应用程序的开发。</p>
@@ -405,8 +406,7 @@ const ParentComponent \= \(\) \=\> \{
 <h1>总结</h1>
 <p>我们在本文中讨论了 React 设计模式，包括高阶组件、容器表示组件模式、复合组件、受控组件等等。通过将这些设计模式和最佳实践整合到您的 React 项目中，您可以提高代码质量、促进团队协作，并使您的应用程序更具可扩展性、灵活性和可维护性。</p>
 
-          </div>
-          </div>
-        );
-      }
-    
+      </div>
+    </div>
+  );
+}

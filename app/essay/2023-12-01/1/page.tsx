@@ -1,21 +1,22 @@
 
-    import "../../essay.css";
-    import Image from "next/image";
-    // @ts-ignore
-      import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-    // @ts-ignore
-    import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
-    export default function Page() {
-      return (
-        <div className="mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">
-          <span className="text-4xl text-left lg:px-20 md:px-[2.5vw] px-4 pt-12 text-visit-font font-bold">
-            DataHub
-          </span>
-          <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
-            Categories: Project &nbsp; &nbsp; 2023-12-01
-          </span>
-          <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
-          <h1>数据中台</h1>
+import "../../essay.css";
+import Image from "next/image";
+// @ts-ignore
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+// @ts-ignore
+import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
+
+export default function Page() {
+  return (
+    <div className="mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">
+      <span className="text-4xl text-left lg:px-20 md:px-[2.5vw] px-4 pt-12 text-visit-font font-bold">
+        DataHub
+      </span>
+      <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
+        Categories: Project &nbsp; &nbsp; 2023-12-01
+      </span>
+      <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
+        <h1>数据中台</h1>
 <p>这个项目是用于展示一些产品以及运营的数据，也便于记录运营数据</p>
 <h2>技术栈</h2>
 <ul>
@@ -184,8 +185,7 @@ export function getOperationData\<T extends "qq" \| "helper" \| "other"\>\(
 <p>记得关注 RRFE-CLI</p>
 </blockquote>
 
-          </div>
-          </div>
-        );
-      }
-    
+      </div>
+    </div>
+  );
+}
