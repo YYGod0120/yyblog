@@ -1,52 +1,52 @@
-// @ts-ignore
-import day1_station from "../../../../public/imgs/武汉之行/day1_station.JPG";
-// @ts-ignore
-import feifeixiazhuang from "../../../../public/imgs/武汉之行/feifeixiazhuang.JPG";
-// @ts-ignore
-import me_girlfriend from "../../../../public/imgs/武汉之行/me_girlfriend.JPG";
-// @ts-ignore
-import bridge0 from "../../../../public/imgs/武汉之行/bridge0.JPG";
-// @ts-ignore
-import bridge1 from "../../../../public/imgs/武汉之行/bridge1.JPG";
-// @ts-ignore
-import guozao1 from "../../../../public/imgs/武汉之行/guozao1.JPG";
-// @ts-ignore
-import guozao2 from "../../../../public/imgs/武汉之行/guozao2.JPG";
-// @ts-ignore
-import gude from "../../../../public/imgs/武汉之行/gude.JPG";
-// @ts-ignore
-import gudexuegao from "../../../../public/imgs/武汉之行/gudexuegao.JPG";
-// @ts-ignore
-import jianghang from "../../../../public/imgs/武汉之行/jianghang.JPG";
-// @ts-ignore
-import day2_night1 from "../../../../public/imgs/武汉之行/day2_night1.JPG";
-// @ts-ignore
-import huanghelou from "../../../../public/imgs/武汉之行/huanghelou.JPG";
-// @ts-ignore
-import day3_m from "../../../../public/imgs/武汉之行/day3_m.JPG";
-// @ts-ignore
-import donhu1 from "../../../../public/imgs/武汉之行/donhu1.JPG";
-// @ts-ignore
-import donhu2 from "../../../../public/imgs/武汉之行/donhu2.JPG";
-// @ts-ignore
-import donhu3 from "../../../../public/imgs/武汉之行/donhu3.JPG";
-// @ts-ignore
-import cha from "../../../../public/imgs/武汉之行/cha.JPG";
-// @ts-ignore
-import chucai1 from "../../../../public/imgs/武汉之行/chucai1.JPG";
-// @ts-ignore
-import chucai2 from "../../../../public/imgs/武汉之行/chucai2.JPG";
-// @ts-ignore
-import zhongshan from "../../../../public/imgs/武汉之行/zhongshan.JPG";
-// @ts-ignore
-import together from "../../../../public/imgs/武汉之行/together.JPG";
+
+  //@ts-ignore
+import day1_station from "../../../../public/imgs/武汉之行/day1_station.JPG"
+//@ts-ignore
+import feifeixiazhuang from "../../../../public/imgs/武汉之行/feifeixiazhuang.JPG"
+//@ts-ignore
+import me_girlfriend from "../../../../public/imgs/武汉之行/me_girlfriend.JPG"
+//@ts-ignore
+import bridge0 from "../../../../public/imgs/武汉之行/bridge0.JPG"
+//@ts-ignore
+import bridge1 from "../../../../public/imgs/武汉之行/bridge1.JPG"
+//@ts-ignore
+import guozao1 from "../../../../public/imgs/武汉之行/guozao1.JPG"
+//@ts-ignore
+import guozao2 from "../../../../public/imgs/武汉之行/guozao2.JPG"
+//@ts-ignore
+import gude from "../../../../public/imgs/武汉之行/gude.JPG"
+//@ts-ignore
+import gudexuegao from "../../../../public/imgs/武汉之行/gudexuegao.JPG"
+//@ts-ignore
+import jianghang from "../../../../public/imgs/武汉之行/jianghang.JPG"
+//@ts-ignore
+import day2_night1 from "../../../../public/imgs/武汉之行/day2_night1.jpg"
+//@ts-ignore
+import huanghelou from "../../../../public/imgs/武汉之行/huanghelou.JPG"
+//@ts-ignore
+import day3_m from "../../../../public/imgs/武汉之行/day3_m.JPG"
+//@ts-ignore
+import donhu1 from "../../../../public/imgs/武汉之行/donhu1.JPG"
+//@ts-ignore
+import donhu2 from "../../../../public/imgs/武汉之行/donhu2.JPG"
+//@ts-ignore
+import donhu3 from "../../../../public/imgs/武汉之行/donhu3.JPG"
+//@ts-ignore
+import cha from "../../../../public/imgs/武汉之行/cha.JPG"
+//@ts-ignore
+import chucai1 from "../../../../public/imgs/武汉之行/chucai1.JPG"
+//@ts-ignore
+import chucai2 from "../../../../public/imgs/武汉之行/chucai2.JPG"
+//@ts-ignore
+import zhongshan from "../../../../public/imgs/武汉之行/zhongshan.JPG"
+//@ts-ignore
+import together from "../../../../public/imgs/武汉之行/together.JPG"
 import "../../essay.css";
 import Image from "next/image";
 // @ts-ignore
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 // @ts-ignore
 import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
-
 export default function Page() {
   return (
     <div className="mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">

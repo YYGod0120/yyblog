@@ -1,11 +1,11 @@
 
+  
 import "../../essay.css";
 import Image from "next/image";
 // @ts-ignore
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 // @ts-ignore
 import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
-
 export default function Page() {
   return (
     <div className="mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">

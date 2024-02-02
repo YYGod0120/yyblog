@@ -1,54 +1,54 @@
-// @ts-ignore
-import room from "../../../../public/imgs/长沙之旅/room.JPG";
-// @ts-ignore
-import jie from "../../../../public/imgs/长沙之旅/jie.JPG";
-// @ts-ignore
-import firstdinner from "../../../../public/imgs/长沙之旅/firstdinner.JPG";
-// @ts-ignore
-import firstdinner2 from "../../../../public/imgs/长沙之旅/firstdinner2.JPG";
-// @ts-ignore
-import firstdinner3 from "../../../../public/imgs/长沙之旅/firstdinner3.JPG";
-// @ts-ignore
-import pic from "../../../../public/imgs/长沙之旅/pic.JPG";
-// @ts-ignore
-import me from "../../../../public/imgs/长沙之旅/me.JPG";
-// @ts-ignore
-import love from "../../../../public/imgs/长沙之旅/love.JPG";
-// @ts-ignore
-import breakfast from "../../../../public/imgs/长沙之旅/breakfast.JPG";
-// @ts-ignore
-import lunch from "../../../../public/imgs/长沙之旅/lunch.JPG";
-// @ts-ignore
-import yeshi from "../../../../public/imgs/长沙之旅/yeshi.JPG";
-// @ts-ignore
-import yeshi2 from "../../../../public/imgs/长沙之旅/yeshi2.JPG";
-// @ts-ignore
-import yeshi3 from "../../../../public/imgs/长沙之旅/yeshi3.JPG";
-// @ts-ignore
-import tea from "../../../../public/imgs/长沙之旅/tea.JPG";
-// @ts-ignore
-import milk from "../../../../public/imgs/长沙之旅/milk.JPG";
-// @ts-ignore
-import yexiao1 from "../../../../public/imgs/长沙之旅/yexiao1.JPG";
-// @ts-ignore
-import icecream from "../../../../public/imgs/长沙之旅/icecream.JPG";
-// @ts-ignore
-import lover_back from "../../../../public/imgs/长沙之旅/lover_back.JPG";
-// @ts-ignore
-import laomao from "../../../../public/imgs/长沙之旅/laomao.JPG";
-// @ts-ignore
-import seaandyou from "../../../../public/imgs/长沙之旅/seaandyou.JPG";
-// @ts-ignore
-import ciba from "../../../../public/imgs/长沙之旅/ciba.JPG";
-// @ts-ignore
-import lastlunch from "../../../../public/imgs/长沙之旅/lastlunch.JPG";
+
+  //@ts-ignore
+import room from "../../../../public/imgs/长沙之旅/room.JPG"
+//@ts-ignore
+import jie from "../../../../public/imgs/长沙之旅/jie.JPG"
+//@ts-ignore
+import firstdinner from "../../../../public/imgs/长沙之旅/firstdinner.JPG"
+//@ts-ignore
+import firstdinner2 from "../../../../public/imgs/长沙之旅/firstdinner2.JPG"
+//@ts-ignore
+import firstdinner3 from "../../../../public/imgs/长沙之旅/firstdinner3.JPG"
+//@ts-ignore
+import pic from "../../../../public/imgs/长沙之旅/pic.JPG"
+//@ts-ignore
+import me from "../../../../public/imgs/长沙之旅/me.JPG"
+//@ts-ignore
+import love from "../../../../public/imgs/长沙之旅/love.JPG"
+//@ts-ignore
+import breakfast from "../../../../public/imgs/长沙之旅/breakfast.JPG"
+//@ts-ignore
+import lunch from "../../../../public/imgs/长沙之旅/lunch.JPG"
+//@ts-ignore
+import yeshi from "../../../../public/imgs/长沙之旅/yeshi.JPG"
+//@ts-ignore
+import yeshi2 from "../../../../public/imgs/长沙之旅/yeshi2.JPG"
+//@ts-ignore
+import yeshi3 from "../../../../public/imgs/长沙之旅/yeshi3.JPG"
+//@ts-ignore
+import tea from "../../../../public/imgs/长沙之旅/tea.JPG"
+//@ts-ignore
+import milk from "../../../../public/imgs/长沙之旅/milk.JPG"
+//@ts-ignore
+import yexiao1 from "../../../../public/imgs/长沙之旅/yexiao1.JPG"
+//@ts-ignore
+import icecream from "../../../../public/imgs/长沙之旅/icecream.JPG"
+//@ts-ignore
+import lover_back from "../../../../public/imgs/长沙之旅/lover_back.JPG"
+//@ts-ignore
+import laomao from "../../../../public/imgs/长沙之旅/laomao.JPG"
+//@ts-ignore
+import seaandyou from "../../../../public/imgs/长沙之旅/seaandyou.JPG"
+//@ts-ignore
+import ciba from "../../../../public/imgs/长沙之旅/ciba.JPG"
+//@ts-ignore
+import lastlunch from "../../../../public/imgs/长沙之旅/lastlunch.JPG"
 import "../../essay.css";
 import Image from "next/image";
 // @ts-ignore
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 // @ts-ignore
 import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
-
 export default function Page() {
   return (
     <div className="mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">
@@ -185,7 +185,8 @@ export default function Page() {
         height: 'auto',
       }} /></p>
 <h1>day3</h1>
-<p>早上出门晚 ，差点进不去橘子洲头,12 点的票，11 点 57 分进去
+<p>git
+早上出门晚 ，差点进不去橘子洲头,12 点的票，11 点 57 分进去
 <Image src={icecream} alt="每个景区都少不了的纪念雪糕，不如武汉的好吃" 
       sizes="100vw"
       style={{

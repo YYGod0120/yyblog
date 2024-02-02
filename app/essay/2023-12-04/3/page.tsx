@@ -1,16 +1,16 @@
-// @ts-ignore
-import react-server-components from "../../../../public/imgs/RSC/react-server-components.JPG";
-// @ts-ignore
-import react-server-components-placeholders from "../../../../public/imgs/RSC/react-server-components-placeholders.JPG";
-// @ts-ignore
-import react-server-components-client from "../../../../public/imgs/RSC/react-server-components-client.JPG";
+
+  //@ts-ignore
+import reactservercomponents from "../../../../public/imgs/RSC/reactservercomponents.png"
+//@ts-ignore
+import reactservercomponentsplaceholders from "../../../../public/imgs/RSC/reactservercomponentsplaceholders.png"
+//@ts-ignore
+import reactservercomponentsclient from "../../../../public/imgs/RSC/reactservercomponentsclient.png"
 import "../../essay.css";
 import Image from "next/image";
 // @ts-ignore
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 // @ts-ignore
 import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
-
 export default function Page() {
   return (
     <div className="mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">
@@ -67,7 +67,7 @@ export default async function requestUsername\(formData\) \{
 \}
 ` }</SyntaxHighlighter>
 <p>当然在一个应用程序中你可以混用两种组件,就像这样：</p>
-<Image src={react-server-components} alt="react-server-components" 
+<Image src={reactservercomponents} alt="react-server-components" 
       sizes="100vw"
       style={{
         width: '100%',
@@ -209,7 +209,7 @@ React 团队已经发布了对 webpack 的官方 RSC 支持， react-server-dom-
 \}
 ` }</SyntaxHighlighter>
 <p>离开模块引用对象，回到序列化根组件,在这个过程的最后，我们得到这样一个 React 树：
-<Image src={react-server-components-placeholders} alt="react-server-components-placeholders" 
+<Image src={reactservercomponentsplaceholders} alt="react-server-components-placeholders" 
       sizes="100vw"
       style={{
         width: '100%',
@@ -240,7 +240,7 @@ function ClientComponent1\(\{children\}\) \{
 浏览器接收来自服务器的 JSON 输出，现在必须开始重建要在浏览器中呈现的 React 树。每当我们遇到一个元素 type 是模块引用时，我们都会希望将其替换为对真实客户端组件函数的引用。
 这个工作依旧需要外界的帮助，他们帮我们将服务器上的模块引用替换了客户端组件函数，现在同样可以用浏览器中真正的客户端组件函数替换这些模块引用。
 重建的 React 树将如下所示——只交换了原生标签和客户端组件：
-<Image src={react-server-components-client} alt="react-server-components-client" 
+<Image src={reactservercomponentsclient} alt="react-server-components-client" 
       sizes="100vw"
       style={{
         width: '100%',

@@ -1,5 +1,5 @@
-# 这里是 YY 的新博客(建设中)
-
-## 打算用 Next 搭建，再从老博客迁移过来
-
-## 更多细节还待考虑
+<p align="center">
+<a href="https://yyblog-gamma.vercel.app/about">
+  <img src="./app/favicon.ico" alt="yyblog Logo" width="350">
+</a>
+</p>

@@ -67,7 +67,7 @@ export default async function requestUsername(formData) {
 
 当然在一个应用程序中你可以混用两种组件,就像这样：
 
-<img src="/imgs/RSC/react-server-components.png" alt="react-server-components" width="500" height="300" />
+<img src="/imgs/RSC/reactservercomponents.png" alt="react-server-components" width="500" height="300" />
 
 但值得注意的是，你只能在服务器组件中调用服务器组件或者客户端组件，而客户端组件只能调用客户端组件不能调用服务器组件:
 
@@ -237,7 +237,7 @@ React 团队已经发布了对 webpack 的官方 RSC 支持， react-server-dom-
 ```
 
 离开模块引用对象，回到序列化根组件,在这个过程的最后，我们得到这样一个 React 树：
-<img src="/imgs/RSC/react-server-components-placeholders.png" alt="react-server-components-placeholders" width="500" height="300" />
+<img src="/imgs/RSC/reactservercomponentsplaceholders.png" alt="react-server-components-placeholders" width="500" height="300" />
 它将被发送到浏览器上以完成最后一步
 
 还有一点需要记住，因为我们要序列化整个 React 树，所以我们传递的 props 也得是能被序列化的，这意味着从服务器组件中，您不能将事件处理程序作为 prop 传递下来！
@@ -273,7 +273,7 @@ function ClientComponent1({children}) {
 浏览器接收来自服务器的 JSON 输出，现在必须开始重建要在浏览器中呈现的 React 树。每当我们遇到一个元素 type 是模块引用时，我们都会希望将其替换为对真实客户端组件函数的引用。
 这个工作依旧需要外界的帮助，他们帮我们将服务器上的模块引用替换了客户端组件函数，现在同样可以用浏览器中真正的客户端组件函数替换这些模块引用。
 重建的 React 树将如下所示——只交换了原生标签和客户端组件：
-<img src="/imgs/RSC/react-server-components-client.png" alt="react-server-components-client" width="500" height="300"/>
+<img src="/imgs/RSC/reactservercomponentsclient.png" alt="react-server-components-client" width="500" height="300"/>
 然后我们像往常一样渲染并将这棵树提交到 DOM 中！
 
 ## 关于 Suspense

@@ -1,22 +1,22 @@
-// @ts-ignore
-import music from "../../../../public/imgs/我的2023/music.JPG";
-// @ts-ignore
-import venue from "../../../../public/imgs/我的2023/venue.JPG";
-// @ts-ignore
-import study from "../../../../public/imgs/我的2023/study.JPG";
-// @ts-ignore
-import wuhan from "../../../../public/imgs/我的2023/wuhan.JPG";
-// @ts-ignore
-import changsha from "../../../../public/imgs/我的2023/changsha.JPG";
-// @ts-ignore
-import YYGod0120 from "../../../../public/imgs/我的2023/YYGod0120.JPG";
+
+  //@ts-ignore
+import music from "../../../../public/imgs/我的2023/music.png"
+//@ts-ignore
+import venue from "../../../../public/imgs/我的2023/venue.png"
+//@ts-ignore
+import study from "../../../../public/imgs/我的2023/study.png"
+//@ts-ignore
+import wuhan from "../../../../public/imgs/我的2023/wuhan.JPG"
+//@ts-ignore
+import changsha from "../../../../public/imgs/我的2023/changsha.JPG"
+//@ts-ignore
+import YYGod0120 from "../../../../public/imgs/我的2023/YYGod0120.png"
 import "../../essay.css";
 import Image from "next/image";
 // @ts-ignore
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 // @ts-ignore
 import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
-
 export default function Page() {
   return (
     <div className="mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">
