@@ -34,10 +34,11 @@ Compared to common blog frameworks (such as `hexo`, `wordpress`, etc.), which ar
 
 # How to Use
 
-1. Fork this repository and run it locally.
-2. Use `YBG-cli` to delete all article files and write your own.
-3. If you don't like the style, you can customize your own styles and animations.
-4. Deploy your blog on `Vercel`.
+1. Fork this repository.
+2. Install the blog CLI using `pnpm i ybg-cli -g`.
+3. Write your own articles and compile them using ybg-cli.
+4. If you don't like the style, you can customize your styles, animations, and more.
+5. Deploy your blog on Vercel.
 
 > If you enjoy full-stack development, the Vercel website provides related databases and full-stack development tutorials.
 
