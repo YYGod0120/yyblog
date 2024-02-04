@@ -23,9 +23,7 @@ export default function Categories() {
               .map((article, index) => {
                 return (
                   <Link
-                    href={`/essay/${article.date}/${
-                      data.findIndex((item) => article.title === item.title) + 1
-                    }`}
+                    href={`/essay/${article.date}/${article.id}`}
                     key={index}
                     className=" no-underline text-default-font hover:text-visit-font"
                   >

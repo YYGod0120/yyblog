@@ -2,7 +2,6 @@ import { data } from "@/app/lib/fileData";
 export function splitPathname(path: string): string {
   const part = path.split("/");
   const len = part.length;
-  console.log(part);
   if (len <= 2) {
     if (part[0] === "" && part[1] === "") {
       return "Stay humble,Keep moving";
@@ -14,6 +13,10 @@ export function splitPathname(path: string): string {
       return "404";
     }
   } else {
-    return data[parseInt(part[len - 1]) - 1].title;
+    return (
+      data.find((i) => {
+        return i.id === part[part.length - 1];
+      })?.title || "404"
+    );
   }
 }
