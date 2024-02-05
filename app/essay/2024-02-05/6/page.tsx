@@ -4,7 +4,7 @@ import SparkleMotion from "../../../../public/imgs/[YGB]-第一期/SparkleMotion
 //@ts-ignore
 import GhostCursor from "../../../../public/imgs/[YGB]-第一期/GhostCursor.gif"
 //@ts-ignore
-import gameTime from "../../../../public/imgs/[YGB]-第一期/gameTime.png"
+import gametime from "../../../../public/imgs/[YGB]-第一期/gametime.png"
 import "../../essay.css";
 import Image from "next/image";
 // @ts-ignore
@@ -66,7 +66,7 @@ export default function Page() {
 <li><p><a href="https://yyblog-gamma.vercel.app/">NewBlog</a>：新博客搭建完备，功能不多，后面再说。预计年前替换之前那个旧博客。对这个博客感兴趣的可以去看看 github 上的代码仓库。</p>
 </li>
 <li><p>幻兽帕鲁火爆全中国，身边就没有没在玩的。98 大洋购入后 2 天疯玩 20 小时后又感觉索然无味，等后续更新了。</p>
-<Image src={gameTime} alt="=game-time" 
+<Image src={gametime} alt="=game-time" 
       sizes="100vw"
       style={{
         width: '100%',
