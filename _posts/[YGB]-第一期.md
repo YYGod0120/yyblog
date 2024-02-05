@@ -41,4 +41,4 @@ excerpt: 这里是每周总结，记录每一周的趣事，技术分享以及�
 1. [NewBlog](https://yyblog-gamma.vercel.app/)：新博客搭建完备，功能不多，后面再说。预计年前替换之前那个旧博客。对这个博客感兴趣的可以去看看 github 上的代码仓库。
 
 2. 幻兽帕鲁火爆全中国，身边就没有没在玩的。98 大洋购入后 2 天疯玩 20 小时后又感觉索然无味，等后续更新了。
-   <img src="/imgs/[YGB]-第一期/gameTime.png" alt="=game-time"/>
+   <img src="/imgs/[YGB]-第一期/gametime.png" alt="=game-time"/>
