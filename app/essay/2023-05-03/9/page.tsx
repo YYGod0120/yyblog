@@ -43,11 +43,16 @@ import zhongshan from "../../../../public/imgs/武汉之行/zhongshan.JPG"
 import together from "../../../../public/imgs/武汉之行/together.JPG"
 import "../../essay.css";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
 // @ts-ignore
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 // @ts-ignore
 import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
 export default function Page() {
+  const Comment = dynamic(() => import("@/components/Comment"), {
+    ssr: false,
+  });
   return (
     <div className="mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">
       <span className="text-4xl text-left lg:px-20 md:px-[2.5vw] px-4 pt-12 text-visit-font font-bold">
@@ -236,6 +241,7 @@ export default function Page() {
 人实在太多，大伙疫情关了 3 年，现在刚放开的一个小长假，出行人数简直爆炸，希望下次能避开高峰期</p>
 
       </div>
+      <Comment />
     </div>
   );
 }
