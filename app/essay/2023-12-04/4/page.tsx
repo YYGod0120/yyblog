@@ -18,15 +18,16 @@ export default function Page() {
     ssr: false,
   });
   return (
+    <div>
     <div className="mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">
-      <span className="text-4xl text-left lg:px-20 md:px-[2.5vw] px-4 pt-12 text-visit-font font-bold">
-        RSC
-      </span>
-      <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
-        Categories: Techology &nbsp; &nbsp; 2023-12-04
-      </span>
-      <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
-        <p>推荐阅读：</p>
+    <span className="text-4xl text-left lg:px-20 md:px-[2.5vw] px-4 pt-12 text-visit-font font-bold">
+      RSC
+    </span>
+    <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
+      Categories: Techology &nbsp; &nbsp; 2023-12-04
+    </span>
+    <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
+      <p>推荐阅读：</p>
 <p><a href="https://chentsulin.medium.com/react-%E6%96%B0%E6%A6%82%E5%BF%B5-server-components-d632f9a18463">React 新概念-服务器组件</a></p>
 <p><a href="https://www.plasmic.app/blog/how-react-server-components-work">How React server components work: an in-depth guide</a></p>
 <p><a href="https://legacy.reactjs.org/blog/2020/12/21/data-fetching-with-react-server-components.html">引入零捆绑大小的 React 服务器组件</a></p>
@@ -268,8 +269,12 @@ Suspense 允许你在 React 组件需要一些尚未准备好的东西（获取�
 <li>目前来说普及度还不够高，迁移难度高，即使与 RSC 最契合的 NEXTJS，你迁移起来依旧难上加难，更别说原生 React 项目</li>
 </ul>
 
-      </div>
-      <Comment />
+    </div>
+    
+  </div>
+  <div className="mt-12 pt-8 bg-white">
+  <Comment />
+  </div>
     </div>
   );
 }

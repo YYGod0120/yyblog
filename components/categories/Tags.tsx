@@ -1,5 +1,5 @@
 import React from "react";
-import { data } from "../../app/lib/fileData";
+import { data } from "../../public/lib/fileData";
 import { countCategories } from "@/utils/Categories";
 export default function Tags() {
   const tags = countCategories(data);

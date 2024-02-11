@@ -1,7 +1,8 @@
 "use client";
-import { useEffect } from "react";
-
+import { useEffect, useState } from "react";
+import "../styles/loading.css";
 export default function Comments() {
+  const [isLoading, setIsLoading] = useState(true);
   function componentDidMount() {
     let script = document.createElement("script");
     let anchor = document.getElementById("inject-comments-for-uterances");
@@ -12,11 +13,26 @@ export default function Comments() {
     script.setAttribute("issue-term", "pathname");
     script.setAttribute("theme", "github-light");
     anchor!.appendChild(script);
+    script.onload = () => {
+      const iframe = document.querySelector("iframe");
+      if (iframe) {
+        iframe.onload = () => {
+          setIsLoading(false);
+        };
+      } else {
+        console.log("iframe not found");
+      }
+    };
   }
 
   useEffect(() => {
     componentDidMount();
   }, []);
 
-  return <div id="inject-comments-for-uterances" className="w-[900px]" />;
+  return (
+    <div className="text-3xl text-visit-font font-bold">
+      {!isLoading ? <div>欢迎留下意见~</div> : <div className="load"></div>}
+      <div id="inject-comments-for-uterances" className="w-[900px]" />
+    </div>
+  );
 }

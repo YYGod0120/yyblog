@@ -56,15 +56,16 @@ export default function Page() {
     ssr: false,
   });
   return (
+    <div>
     <div className="mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">
-      <span className="text-4xl text-left lg:px-20 md:px-[2.5vw] px-4 pt-12 text-visit-font font-bold">
-        长沙之旅
-      </span>
-      <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
-        Categories: Life &nbsp; &nbsp; 2023-10-03
-      </span>
-      <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
-        <blockquote>
+    <span className="text-4xl text-left lg:px-20 md:px-[2.5vw] px-4 pt-12 text-visit-font font-bold">
+      长沙之旅
+    </span>
+    <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
+      Categories: Life &nbsp; &nbsp; 2023-10-03
+    </span>
+    <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
+      <blockquote>
 <p>下次记得国庆多呆一天</p>
 </blockquote>
 <h1>day1</h1>
@@ -241,8 +242,12 @@ export default function Page() {
 <p>其实长沙没武汉大，从地铁就能看出来，但我感觉玩的比武汉开心，可能在吃这一方面比上次武汉吃的多得多，基本每一天晚上都吃了夜宵
 靠地铁近，不用每次都打车也省下了一笔交通费</p>
 
-      </div>
-      <Comment />
+    </div>
+    
+  </div>
+  <div className="mt-12 pt-8 bg-white">
+  <Comment />
+  </div>
     </div>
   );
 }

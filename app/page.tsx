@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { data } from "./lib/fileData";
+import { data } from "../public/lib/fileData";
 import Paginate from "@/components/paginate";
 import { useState } from "react";
 

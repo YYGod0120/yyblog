@@ -24,15 +24,16 @@ export default function Page() {
     ssr: false,
   });
   return (
+    <div>
     <div className="mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">
-      <span className="text-4xl text-left lg:px-20 md:px-[2.5vw] px-4 pt-12 text-visit-font font-bold">
-        我的2023
-      </span>
-      <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
-        Categories: Life &nbsp; &nbsp; 2024-01-01
-      </span>
-      <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
-        <blockquote>
+    <span className="text-4xl text-left lg:px-20 md:px-[2.5vw] px-4 pt-12 text-visit-font font-bold">
+      我的2023
+    </span>
+    <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
+      Categories: Life &nbsp; &nbsp; 2024-01-01
+    </span>
+    <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
+      <blockquote>
 <p>这是我的第一篇年末总结。</p>
 </blockquote>
 <p>2023 年完美谢幕，说不上万事如意，好在结果令人满意。</p>
@@ -100,8 +101,12 @@ export default function Page() {
 <li>别挂科</li>
 </ul>
 
-      </div>
-      <Comment />
+    </div>
+    
+  </div>
+  <div className="mt-12 pt-8 bg-white">
+  <Comment />
+  </div>
     </div>
   );
 }

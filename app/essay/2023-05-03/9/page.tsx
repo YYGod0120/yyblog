@@ -54,15 +54,16 @@ export default function Page() {
     ssr: false,
   });
   return (
+    <div>
     <div className="mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">
-      <span className="text-4xl text-left lg:px-20 md:px-[2.5vw] px-4 pt-12 text-visit-font font-bold">
-        武汉之行
-      </span>
-      <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
-        Categories: Life &nbsp; &nbsp; 2023-05-03
-      </span>
-      <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
-        <blockquote>
+    <span className="text-4xl text-left lg:px-20 md:px-[2.5vw] px-4 pt-12 text-visit-font font-bold">
+      武汉之行
+    </span>
+    <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
+      Categories: Life &nbsp; &nbsp; 2023-05-03
+    </span>
+    <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
+      <blockquote>
 <p>人真的多多多，酒店真的远远远；希望下次能避开大假期，酒店定的<del>贵一点</del>好一点</p>
 </blockquote>
 <h1>Day1</h1>
@@ -240,8 +241,12 @@ export default function Page() {
 酒店别因为便宜就定在鸟不拉屎的地方，啥也没有打车费还高，加上打车费和位置好的酒店价格没差
 人实在太多，大伙疫情关了 3 年，现在刚放开的一个小长假，出行人数简直爆炸，希望下次能避开高峰期</p>
 
-      </div>
-      <Comment />
+    </div>
+    
+  </div>
+  <div className="mt-12 pt-8 bg-white">
+  <Comment />
+  </div>
     </div>
   );
 }

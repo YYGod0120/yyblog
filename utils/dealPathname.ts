@@ -1,4 +1,4 @@
-import { data } from "@/app/lib/fileData";
+import { data } from "@/public/lib/fileData";
 export function splitPathname(path: string): string {
   const part = path.split("/");
   const len = part.length;

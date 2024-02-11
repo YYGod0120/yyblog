@@ -13,15 +13,16 @@ export default function Page() {
     ssr: false,
   });
   return (
+    <div>
     <div className="mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">
-      <span className="text-4xl text-left lg:px-20 md:px-[2.5vw] px-4 pt-12 text-visit-font font-bold">
-        TheFirstRedrockProject
-      </span>
-      <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
-        Categories: Project &nbsp; &nbsp; 2023-09-18
-      </span>
-      <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
-        <blockquote>
+    <span className="text-4xl text-left lg:px-20 md:px-[2.5vw] px-4 pt-12 text-visit-font font-bold">
+      TheFirstRedrockProject
+    </span>
+    <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
+      Categories: Project &nbsp; &nbsp; 2023-09-18
+    </span>
+    <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
+      <blockquote>
 <p>第一个团队合作项目</p>
 </blockquote>
 <p>收获：</p>
@@ -79,8 +80,12 @@ export default function Page() {
 一个在于 ts 的运用，数据类型麻烦且多，需要仔细琢磨不然很容易出错
 二个就是对原生表格的运用，时间表数据的处理也是一大难点</p>
 
-      </div>
-      <Comment />
+    </div>
+    
+  </div>
+  <div className="mt-12 pt-8 bg-white">
+  <Comment />
+  </div>
     </div>
   );
 }
