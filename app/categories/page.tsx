@@ -1,7 +1,7 @@
 import Tags from "@/components/categories/Tags";
 import { countCategories } from "@/utils/Categories";
 import React from "react";
-import { data } from "../../public/lib/fileData";
+import { data } from "@/app/lib/fileData";
 import Link from "next/link";
 
 export default function Categories() {

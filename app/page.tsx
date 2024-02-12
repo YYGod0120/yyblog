@@ -7,7 +7,6 @@ import { useState } from "react";
 export default function Home() {
   const [pageNumber, setPageNumber] = useState(0);
   console.log(data);
-
   return (
     <div className="mt-8">
       {data.slice(pageNumber * 5, (pageNumber + 1) * 5).map((file, index) => (
