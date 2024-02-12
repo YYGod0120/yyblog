@@ -415,9 +415,9 @@ const ParentComponent \= \(\) \=\> \{
     </div>
     
   </div>
-  <div className="mt-12 pt-8 bg-white">
+  <div className="mt-12 py-8 bg-white px-6">
   <Comment />
-  </div>
+</div>
     </div>
   );
 }

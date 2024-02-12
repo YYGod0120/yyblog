@@ -1,17 +1,19 @@
 "use client";
 import Link from "next/link";
-import { data } from "../public/lib/fileData";
+import { data } from "../app/lib/fileData";
 import Paginate from "@/components/paginate";
 import { useState } from "react";
 
 export default function Home() {
   const [pageNumber, setPageNumber] = useState(0);
+  console.log(data);
+
   return (
     <div className="mt-8">
       {data.slice(pageNumber * 5, (pageNumber + 1) * 5).map((file, index) => (
         <div
           className="bg-white  cursor-pointer mb-[30px] text-start shadow-lg rounded"
-          key={file.title || index}
+          key={file.id}
         >
           <Link
             href={`/essay/${file.date}/${file.id}`}

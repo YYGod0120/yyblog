@@ -163,9 +163,9 @@ CLI 的难点在于解析文章以及路径问题。</p>
     </div>
     
   </div>
-  <div className="mt-12 pt-8 bg-white">
+  <div className="mt-12 py-8 bg-white px-6">
   <Comment />
-  </div>
+</div>
     </div>
   );
 }

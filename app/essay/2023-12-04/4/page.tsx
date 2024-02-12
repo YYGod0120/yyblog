@@ -272,9 +272,9 @@ Suspense 允许你在 React 组件需要一些尚未准备好的东西（获取�
     </div>
     
   </div>
-  <div className="mt-12 pt-8 bg-white">
+  <div className="mt-12 py-8 bg-white px-6">
   <Comment />
-  </div>
+</div>
     </div>
   );
 }
