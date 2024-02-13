@@ -28,21 +28,21 @@ export default function Page() {
 <p>在这里祝大家新年快乐~</p>
 <h2>Techology</h2>
 <ol>
-<li><p>utteranc，一个基于 github issue 的评论区组件，比较老了。
-<a href="https://utteranc.es/">https://utteranc.es/</a>
-新一点评论库的有 gitalk 以及 gitment 等等。</p>
+<li><p>utteranc，一个基于 github issue 的评论区组件，比较老了。</p>
+<p><a href="https://utteranc.es/">https://utteranc.es/</a></p>
+<p>新一点评论库的有 gitalk 以及 gitment 等等。</p>
 </li>
-<li><p>Vite 发布 5.1，新增一些运行时 api，还有变得更快了。
-<a href="https://vitejs.dev/blog/announcing-vite5-1.html">https://vitejs.dev/blog/announcing-vite5-1.html</a></p>
+<li><p>Vite 发布 5.1，新增一些运行时 api，还有变得更快了。</p>
+<p><a href="https://vitejs.dev/blog/announcing-vite5-1.html">https://vitejs.dev/blog/announcing-vite5-1.html</a></p>
 </li>
-<li><p>lodash，一个现代的 JavaScript 实用程序库，提供模块化，性能和附加功能。
-<a href="https://github.com/lodash/lodash?tab=readme-ov-file">https://github.com/lodash/lodash?tab=readme-ov-file</a></p>
+<li><p>lodash，一个现代的 JavaScript 实用程序库，提供模块化，性能和附加功能。</p>
+<p><a href="https://github.com/lodash/lodash?tab=readme-ov-file">https://github.com/lodash/lodash?tab=readme-ov-file</a></p>
 </li>
-<li><p>shields.io，是一种以 SVG 和光栅格式提供简洁、一致且清晰的徽章的服务，可以轻松包含在 GitHub 自述文件或任何其他网页中。
-<a href="https://github.com/badges/shields">https://github.com/badges/shields</a></p>
+<li><p>shields.io，是一种以 SVG 和光栅格式提供简洁、一致且清晰的徽章的服务，可以轻松包含在 GitHub 自述文件或任何其他网页中。</p>
+<p><a href="https://github.com/badges/shields">https://github.com/badges/shields</a></p>
 </li>
-<li><p>css-loaders,一个纯 css 实现加载的动画库。
-<a href="https://css-loaders.com/">https://css-loaders.com/</a></p>
+<li><p>css-loaders,一个纯 css 实现加载的动画库。</p>
+<p><a href="https://css-loaders.com/">https://css-loaders.com/</a></p>
 </li>
 </ol>
 <h2>Study</h2>

@@ -12,19 +12,25 @@ excerpt: 这里是每周总结，记录每一周的趣事，技术分享以及�
 ## Techology
 
 1. utteranc，一个基于 github issue 的评论区组件，比较老了。
+
    https://utteranc.es/
+
    新一点评论库的有 gitalk 以及 gitment 等等。
 
 2. Vite 发布 5.1，新增一些运行时 api，还有变得更快了。
+
    https://vitejs.dev/blog/announcing-vite5-1.html
 
 3. lodash，一个现代的 JavaScript 实用程序库，提供模块化，性能和附加功能。
+
    https://github.com/lodash/lodash?tab=readme-ov-file
 
 4. shields.io，是一种以 SVG 和光栅格式提供简洁、一致且清晰的徽章的服务，可以轻松包含在 GitHub 自述文件或任何其他网页中。
+
    https://github.com/badges/shields
 
 5. css-loaders,一个纯 css 实现加载的动画库。
+
    https://css-loaders.com/
 
 ## Study
