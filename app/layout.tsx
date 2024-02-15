@@ -1,8 +1,9 @@
-import "./globals.css";
-import Comment from "@/components/Comment";
 import localFont from "next/font/local";
+import Comment from "@/components/Comment";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
+import "./globals.css";
 const roboto = localFont({
   src: "../public/fonts/LXGWWenKaiLite-Light.ttf",
   display: "swap",

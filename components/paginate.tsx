@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 type Paginate = {
   pages: number;

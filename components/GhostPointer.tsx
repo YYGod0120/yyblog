@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
-import "../styles/ghost-pointer.css";
 import Script from "next/script";
+import "@/styles/ghost-pointer.css";
+
 type GhostPointerProps = {
   children?: ReactNode;
 };

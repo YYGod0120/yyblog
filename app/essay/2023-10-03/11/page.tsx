@@ -1,4 +1,6 @@
 
+  import Image from "next/image";
+import dynamic from "next/dynamic";
   //@ts-ignore
 import room from "../../../../public/imgs/长沙之旅/room.JPG"
 //@ts-ignore
@@ -43,14 +45,11 @@ import seaandyou from "../../../../public/imgs/长沙之旅/seaandyou.JPG"
 import ciba from "../../../../public/imgs/长沙之旅/ciba.JPG"
 //@ts-ignore
 import lastlunch from "../../../../public/imgs/长沙之旅/lastlunch.JPG"
-import "../../essay.css";
-import Image from "next/image";
-import dynamic from "next/dynamic";
-
-// @ts-ignore
+  // @ts-ignore
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 // @ts-ignore
 import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
+import "@/app/essay/essay.css";
 export default function Page() {
   const Comment = dynamic(() => import("@/components/Comment"), {
     ssr: false,

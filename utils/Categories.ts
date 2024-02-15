@@ -1,9 +1,9 @@
 import { FileData } from "@/types/essay";
-type countCategories = {
+type CountedCategories = {
   [x: string]: number;
 };
-export function countCategories(jsonArray: FileData[]): countCategories {
-  const categoryCount: countCategories = {};
+export function countCategories(jsonArray: FileData[]): CountedCategories {
+  const categoryCount: CountedCategories = {};
   // 遍历JSON数组
   jsonArray.forEach((jsonObject) => {
     const category = jsonObject.categories;

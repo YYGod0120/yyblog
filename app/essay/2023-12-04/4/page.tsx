@@ -1,18 +1,17 @@
 
+  import Image from "next/image";
+import dynamic from "next/dynamic";
   //@ts-ignore
 import reactservercomponents from "../../../../public/imgs/RSC/reactservercomponents.png"
 //@ts-ignore
 import reactservercomponentsplaceholders from "../../../../public/imgs/RSC/reactservercomponentsplaceholders.png"
 //@ts-ignore
 import reactservercomponentsclient from "../../../../public/imgs/RSC/reactservercomponentsclient.png"
-import "../../essay.css";
-import Image from "next/image";
-import dynamic from "next/dynamic";
-
-// @ts-ignore
+  // @ts-ignore
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 // @ts-ignore
 import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
+import "@/app/essay/essay.css";
 export default function Page() {
   const Comment = dynamic(() => import("@/components/Comment"), {
     ssr: false,

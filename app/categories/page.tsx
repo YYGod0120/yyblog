@@ -1,11 +1,13 @@
-import Tags from "@/components/categories/Tags";
-import { countCategories } from "@/utils/Categories";
 import React from "react";
-import { data } from "@/app/lib/fileData";
 import Link from "next/link";
 
+import Tags from "@/components/categories/Tags";
+
+import { countCategories } from "@/utils/Categories";
+import { DATA } from "@/app/lib/fileData";
+
 export default function Categories() {
-  const tags = countCategories(data);
+  const tags = countCategories(DATA);
   return (
     <div>
       <Tags />
@@ -16,23 +18,21 @@ export default function Categories() {
             className=" bg-white px-12 py-6 flex flex-col text-start mt-8 shadow-lg rounded"
           >
             <div className="text-2xl mb-5 font-bold cursor-default">{tag}</div>
-            {data
-              .filter((item) => {
-                return item.categories === tag;
-              })
-              .map((article, index) => {
-                return (
-                  <Link
-                    href={`/essay/${article.date}/${article.id}`}
-                    key={index}
-                    className=" no-underline text-default-font hover:text-visit-font"
-                  >
-                    <li className=" text-xl mb-3 ml-3">
-                      {`[${article.date}]`}&nbsp;&nbsp;{article.title}
-                    </li>
-                  </Link>
-                );
-              })}
+            {DATA.filter((item) => {
+              return item.categories === tag;
+            }).map((article, index) => {
+              return (
+                <Link
+                  href={`/essay/${article.date}/${article.id}`}
+                  key={index}
+                  className=" no-underline text-default-font hover:text-visit-font"
+                >
+                  <li className=" text-xl mb-3 ml-3">
+                    {`[${article.date}]`}&nbsp;&nbsp;{article.title}
+                  </li>
+                </Link>
+              );
+            })}
           </div>
         );
       })}

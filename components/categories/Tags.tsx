@@ -1,8 +1,8 @@
 import React from "react";
-import { data } from "@/app/lib/fileData";
+import { DATA } from "@/app/lib/fileData";
 import { countCategories } from "@/utils/Categories";
 export default function Tags() {
-  const tags = countCategories(data);
+  const tags = countCategories(DATA);
   return (
     <div className="mt-5 mb-5 flex flex-row cursor-default">
       {Object.keys(tags).map((tag, index) => {

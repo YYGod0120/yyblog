@@ -1,5 +1,5 @@
 "use client";
-import "../styles/error.css";
+import "@/styles/error.css";
 export default function GlobalError() {
   return (
     <div className="flex flex-row justify-center items-center h-[82vh]">

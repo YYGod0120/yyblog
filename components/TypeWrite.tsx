@@ -1,6 +1,6 @@
-import { splitPathname } from "@/utils/dealPathname";
 import { usePathname } from "next/navigation";
 import { ReactTyped } from "react-typed";
+import { splitPathname } from "@/utils/dealPathname";
 export const MyTypeWrite = () => {
   const pathname = usePathname();
   const title = splitPathname(pathname);

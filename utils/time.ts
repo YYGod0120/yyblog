@@ -1,8 +1,8 @@
 import dayjs from "dayjs";
 
-const thisYear = dayjs().format("YYYY");
+const THISYEAR = dayjs().format("YYYY");
 
-export const yearRange = `2023 - ${thisYear}`;
+export const YEARRANGE = `2023 - ${THISYEAR}`;
 
 export function UTCToString(date: string): string {
   return dayjs(date).format("YYYY-MM-DD");

@@ -3,6 +3,9 @@ import { useEffect, useState } from "react";
 import "../styles/loading.css";
 export default function Comments() {
   const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    componentDidMount();
+  }, []);
   function componentDidMount() {
     let script = document.createElement("script");
     let anchor = document.getElementById("inject-comments-for-uterances");
@@ -25,14 +28,10 @@ export default function Comments() {
     };
   }
 
-  useEffect(() => {
-    componentDidMount();
-  }, []);
-
   return (
     <div className="text-3xl text-visit-font font-bold">
       {!isLoading ? <div>欢迎留下意见~</div> : <div className="load"></div>}
-      <div id="inject-comments-for-uterances" className="w-[900px]" />
+      <div id="inject-comments-for-uterances" />
     </div>
   );
 }

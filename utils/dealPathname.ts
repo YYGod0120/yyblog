@@ -1,4 +1,4 @@
-import { data } from "@/app/lib/fileData";
+import { DATA } from "@/app/lib/fileData";
 export function splitPathname(path: string): string {
   const part = path.split("/");
   const len = part.length;
@@ -14,8 +14,10 @@ export function splitPathname(path: string): string {
     }
   } else {
     return (
-      data.find((i) => {
-        return i.id === part[part.length - 1];
+      DATA.find((i) => {
+        return (
+          i.date === part[part.length - 2] && i.id === part[part.length - 1]
+        );
       })?.title || "404"
     );
   }

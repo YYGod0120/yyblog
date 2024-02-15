@@ -1,15 +1,15 @@
 "use client";
-import Link from "next/link";
-import { data } from "../app/lib/fileData";
-import Paginate from "@/components/paginate";
 import { useState } from "react";
+import Link from "next/link";
+import { DATA } from "@/app/lib/fileData";
+import Paginate from "@/components/Paginate";
 
 export default function Home() {
   const [pageNumber, setPageNumber] = useState(0);
-  console.log(data);
+  console.log(DATA);
   return (
     <div className="mt-8">
-      {data.slice(pageNumber * 5, (pageNumber + 1) * 5).map((file, index) => (
+      {DATA.slice(pageNumber * 5, (pageNumber + 1) * 5).map((file, index) => (
         <div
           className="bg-white  cursor-pointer mb-[30px] text-start shadow-lg rounded"
           key={file.id}
@@ -28,7 +28,7 @@ export default function Home() {
         </div>
       ))}
       <Paginate
-        pages={data.length}
+        pages={DATA.length}
         nowPage={pageNumber}
         setPage={setPageNumber}
       />

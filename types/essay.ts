@@ -1,14 +1,3 @@
-export type yaml = {
-  title: string;
-  date: string;
-  categories: string;
-  excerpt: string;
-};
-export type FileData = {
-  title: string;
-  date: string;
-  categories: string;
-  excerpt: string;
-  html: string;
-  id: string;
-};
+type FileMetadataType = "title" | "date" | "categories" | "excerpt";
+export type FileMetadata = Record<FileMetadataType, string>;
+export type FileData = Record<FileMetadataType | "html" | "id", string>;
