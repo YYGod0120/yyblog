@@ -69,7 +69,7 @@ export async function compileFile(): Promise<mdFile[]> {
               picPath: picPath,
             },
           }
-        : { mdMatter: newMatter, mdHtml: htmlText }
+        : { mdMatter: newMatter, mdHtml: htmlText },
     );
   }
   return compiledFiles;
@@ -96,14 +96,14 @@ function ImageRepimg(html: string) {
 
       return `<Image src={${newSrc.slice(
         0,
-        newSrc.lastIndexOf(".")
+        newSrc.lastIndexOf("."),
       )}} alt="${modifiedAlt}" 
       sizes="100vw"
       style={{
         width: '100%',
         height: 'auto',
       }} />`;
-    }
+    },
   );
   return processedHtml;
 }
@@ -120,7 +120,7 @@ function highLightHtml(html: string) {
       const decodeCode = he.decode(codeContent);
       const codeWithBackslash = decodeCode.replace(/([^\w\s"'])/g, "\\$1");
       return `<SyntaxHighlighter language="${language}" style={oneLight} showLineNumbers>{ \`${codeWithBackslash}\` }</SyntaxHighlighter>`;
-    }
+    },
   );
 
   return replacedString1;

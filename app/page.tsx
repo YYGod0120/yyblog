@@ -11,16 +11,16 @@ export default function Home() {
     <div className="mt-8">
       {DATA.slice(pageNumber * 5, (pageNumber + 1) * 5).map((file, index) => (
         <div
-          className="bg-white  cursor-pointer mb-[30px] text-start shadow-lg rounded"
+          className=" mb-[30px] cursor-pointer  rounded bg-white text-start shadow-lg"
           key={file.id}
         >
           <Link
             href={`/essay/${file.date}/${file.id}`}
             className="no-underline"
           >
-            <div className="pt-8 pb-8 px-10  text-default-font hover:text-visit-font ">
-              <div className="mb-4 font-bold text-3xl">{file.title}</div>
-              <div className=" font-bold text-lg">
+            <div className="px-10 pb-8 pt-8  text-default-font hover:text-visit-font ">
+              <div className="mb-4 text-3xl font-bold">{file.title}</div>
+              <div className=" text-lg font-bold">
                 [{file.date}]&nbsp;&nbsp;{file.excerpt}
               </div>
             </div>

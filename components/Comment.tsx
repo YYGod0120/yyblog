@@ -29,7 +29,7 @@ export default function Comments() {
   }
 
   return (
-    <div className="text-3xl text-visit-font font-bold">
+    <div className="text-3xl font-bold text-visit-font">
       {!isLoading ? <div>欢迎留下意见~</div> : <div className="load"></div>}
       <div id="inject-comments-for-uterances" />
     </div>

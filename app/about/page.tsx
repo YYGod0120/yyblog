@@ -2,8 +2,8 @@ import React from "react";
 
 export default function page() {
   return (
-    <div className=" bg-white px-14 py-10 flex flex-col text-start mt-8 shadow-lg rounded ">
-      <div className="text-3xl mb-5 font-bold cursor-default">About me</div>
+    <div className=" mt-8 flex flex-col rounded bg-white px-14 py-10 text-start shadow-lg ">
+      <div className="mb-5 cursor-default text-3xl font-bold">About me</div>
       <div className="ml-3 text-lg">
         <li className="mb-5">
           💬 Welcome here, I am YYGod. This is my personal blog where I share my
@@ -14,7 +14,7 @@ export default function page() {
           school-level organization RedRock Team.
           <a
             href="https://redrock.team/"
-            className=" no-underline hover-underline-animation text-visit-font"
+            className=" hover-underline-animation text-visit-font no-underline"
           >
             Click to visit our official website.
           </a>
@@ -23,7 +23,7 @@ export default function page() {
           🤝 I like fitness, code, travel and games.This is my{" "}
           <a
             href="https://steamcommunity.com/id/WANGPUMING/"
-            className=" no-underline hover-underline-animation text-visit-font"
+            className=" hover-underline-animation text-visit-font no-underline"
           >
             steam.
           </a>
@@ -35,7 +35,7 @@ export default function page() {
           (The style comes from the blog of{" "}
           <a
             href="https://github.com/tw93"
-            className=" no-underline hover-underline-animation text-visit-font"
+            className=" hover-underline-animation text-visit-font no-underline"
           >
             tw93
           </a>

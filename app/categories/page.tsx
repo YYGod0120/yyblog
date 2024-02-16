@@ -15,9 +15,9 @@ export default function Categories() {
         return (
           <div
             key={index}
-            className=" bg-white px-12 py-6 flex flex-col text-start mt-8 shadow-lg rounded"
+            className=" mt-8 flex flex-col rounded bg-white px-12 py-6 text-start shadow-lg"
           >
-            <div className="text-2xl mb-5 font-bold cursor-default">{tag}</div>
+            <div className="mb-5 cursor-default text-2xl font-bold">{tag}</div>
             {DATA.filter((item) => {
               return item.categories === tag;
             }).map((article, index) => {
@@ -25,9 +25,9 @@ export default function Categories() {
                 <Link
                   href={`/essay/${article.date}/${article.id}`}
                   key={index}
-                  className=" no-underline text-default-font hover:text-visit-font"
+                  className=" text-default-font no-underline hover:text-visit-font"
                 >
-                  <li className=" text-xl mb-3 ml-3">
+                  <li className=" mb-3 ml-3 text-xl">
                     {`[${article.date}]`}&nbsp;&nbsp;{article.title}
                   </li>
                 </Link>

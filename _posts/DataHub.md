@@ -63,7 +63,7 @@ excerpt: 红岩网校数据中台
 export function useGetPv() {
   const { data, error, isLoading } = useSWR(
     `/data-middle-office/pvuv?type=pv&periods=${xAxis["days"]}`,
-    fetcher
+    fetcher,
   );
   if (!isLoading && !error) {
     const cqappPv = data.products.cqapp;
@@ -156,13 +156,13 @@ export type otherData = OperationData & {
 export type Operations<T extends "qq" | "helper" | "other"> = T extends "qq"
   ? qqOperationData[]
   : T extends "helper"
-  ? helperOperationData[]
-  : T extends "other"
-  ? otherData[]
-  : never;
+    ? helperOperationData[]
+    : T extends "other"
+      ? otherData[]
+      : never;
 export function getOperationData<T extends "qq" | "helper" | "other">(
   project: T,
-  periods?: string
+  periods?: string,
 ): Operations<T> | undefined {
   const url = periods
     ? `/data-middle-office/runtimes/${project}?periods=${periods}`

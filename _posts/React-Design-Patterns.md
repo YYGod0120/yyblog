@@ -35,7 +35,7 @@ const StarWarsCharactersContainer: React.FC = () => {
     setIsLoading(true);
     try {
       const response = await fetch(
-        "https://akabab.github.io/starwars-api/api/all.json"
+        "https://akabab.github.io/starwars-api/api/all.json",
       );
       const data = await response.json();
       setIsLoading(false);
@@ -121,7 +121,7 @@ export const useFetchStarWarsCharacters = () => {
             "Access-Control-Allow-Origin": "*",
           },
           signal: controller.signal,
-        }
+        },
       );
       const data = await response.json();
       setIsLoading(false);

@@ -8,7 +8,7 @@ type GhostPointerProps = {
 
 export function GhostPointer({ children }: GhostPointerProps) {
   return (
-    <div className="h-[250px] bg-[#2C3E50] w-[100vw] md:block hidden">
+    <div className="hidden h-[250px] w-[100vw] bg-[#2C3E50] md:block">
       <div id="ghost" className="ghost">
         <div className="ghost__head">
           <div className="ghost__eyes"></div>

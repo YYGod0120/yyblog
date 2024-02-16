@@ -32,8 +32,8 @@ export default function Header() {
     window.innerWidth > 1024
       ? setTags(defaultTags)
       : window.innerWidth < 768
-      ? setTags(defaultTags.slice(0, 2))
-      : setTags(defaultTags.slice(0, 3));
+        ? setTags(defaultTags.slice(0, 2))
+        : setTags(defaultTags.slice(0, 3));
   };
 
   useEffect(() => {
@@ -45,19 +45,19 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="bg-white w-[100vw] flex flex-col  items-center ">
-      <div className="flex  text-2xl  h-[45px] items-center w-[95vw] lg:w-[900px]">
+    <div className="flex w-[100vw] flex-col items-center  bg-white ">
+      <div className="flex  h-[45px]  w-[95vw] items-center text-2xl lg:w-[900px]">
         <Link
           href="/"
-          className="text-visit-font font-bold no-underline hover:text-visit-font w-[350px] text-start"
+          className="w-[350px] text-start font-bold text-visit-font no-underline hover:text-visit-font"
         >
           YYGod0120
         </Link>
-        <div className="flex justify-end space-x-16 text-xl w-[650px] text-default-font">
+        <div className="flex w-[650px] justify-end space-x-16 text-xl text-default-font">
           {tags.map((item) => {
             return (
               <Link
-                className="text-default-font hover:text-visit-font font-semibold no-underline"
+                className="font-semibold text-default-font no-underline hover:text-visit-font"
                 href={item.href}
                 key={item.name}
               >

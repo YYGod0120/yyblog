@@ -74,7 +74,11 @@
   position: absolute;
   top: 15px;
   left: 0;
-  box-shadow: -62px 0 0 #fff, -31px 0 0 #fff, 31px 0 0 #fff, 62px 0 0 #fff,
+  box-shadow:
+    -62px 0 0 #fff,
+    -31px 0 0 #fff,
+    31px 0 0 #fff,
+    62px 0 0 #fff,
     93px 0 0 #fff;
   border-radius: 50%;
   animation: ghost-rips 1.2s linear infinite;
