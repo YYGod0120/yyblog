@@ -1,3 +1,4 @@
+
 blockquote {
   margin-left: 0;
   border-left: 4px solid #bac2cb;
@@ -29,6 +30,6 @@ h6 {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
-a:hover {
-  color: #0c7ad8;
+a:hover{
+  color:#0c7ad8
 }

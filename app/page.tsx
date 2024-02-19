@@ -11,7 +11,7 @@ export default function Home() {
     <div className="mt-8">
       {DATA.slice(pageNumber * 5, (pageNumber + 1) * 5).map((file, index) => (
         <div
-          className=" mb-[30px] cursor-pointer  rounded bg-white text-start shadow-lg"
+          className=" mb-[30px]  cursor-pointer rounded bg-white text-start shadow-lg"
           key={file.id}
         >
           <Link
