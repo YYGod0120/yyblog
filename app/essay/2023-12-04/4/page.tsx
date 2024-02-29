@@ -23,9 +23,9 @@ export default function Page() {
       RSC
     </span>
     <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
-      Categories: Techology &nbsp; &nbsp; 2023-12-04
+      Categories: Technology &nbsp; &nbsp; 2023-12-04
     </span>
-    <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
+    <div className="flex text-start break-words flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
       <p>推荐阅读：</p>
 <p><a href="https://chentsulin.medium.com/react-%E6%96%B0%E6%A6%82%E5%BF%B5-server-components-d632f9a18463">React 新概念-服务器组件</a></p>
 <p><a href="https://www.plasmic.app/blog/how-react-server-components-work">How React server components work: an in-depth guide</a></p>

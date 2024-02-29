@@ -2,7 +2,7 @@
 title: React-Design-Patterns
 date: 2023-11-18
 excerpt: React 设计模式(译)
-categories: Techology
+categories: Technology
 ---
 
 React 设计模式(译)

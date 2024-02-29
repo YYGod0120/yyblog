@@ -2,12 +2,12 @@ import React from "react";
 
 export default function page() {
   return (
-    <div className=" mt-8 flex flex-col rounded bg-white px-14 py-10 text-start shadow-lg ">
+    <div className=" mt-8 flex flex-col rounded bg-white px-4 py-3 text-start shadow-lg md:px-14 md:py-10 ">
       <div className="mb-5 cursor-default text-3xl font-bold">About me</div>
       <div className="ml-3 text-lg">
         <li className="mb-5">
           💬 Welcome here, I am YYGod. This is my personal blog where I share my
-          study,life technology, and some of my funny thoughs.
+          study,life technology, and some of my funny though.
         </li>
         <li className="mb-5">
           👨‍💻 I am a front-end engineer from CQUPT. I currently work for the

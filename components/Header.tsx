@@ -53,7 +53,7 @@ export default function Header() {
         >
           YYGod0120
         </Link>
-        <div className="flex w-[650px] justify-end space-x-16 text-xl text-default-font">
+        <div className="flex w-[650px] justify-end space-x-6 text-xl text-default-font  lg:space-x-16">
           {tags.map((item) => {
             return (
               <Link

@@ -1,7 +1,7 @@
 ---
 title: RSC
 date: 2023-12-04
-categories: Techology
+categories: Technology
 excerpt: What is RSC, and how it works
 ---
 

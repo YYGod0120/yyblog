@@ -9,7 +9,7 @@ excerpt: 这里是每周总结，记录每一周的趣事，技术分享以及�
 
 在这里祝大家新年快乐~
 
-## Techology
+## Technology
 
 1. utteranc，一个基于 github issue 的评论区组件，比较老了。
 

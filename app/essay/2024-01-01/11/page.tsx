@@ -31,7 +31,7 @@ export default function Page() {
     <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
       Categories: Life &nbsp; &nbsp; 2024-01-01
     </span>
-    <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
+    <div className="flex text-start break-words flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
       <blockquote>
 <p>这是我的第一篇年末总结。</p>
 </blockquote>

@@ -20,12 +20,12 @@ export default function Page() {
     <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
       Categories: Weekly &nbsp; &nbsp; 2024-02-12
     </span>
-    <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
+    <div className="flex text-start break-words flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
       <blockquote>
 <p>这里是每周总结，记录每一周的趣事，技术分享以及学习生活。</p>
 </blockquote>
 <p>在这里祝大家新年快乐~</p>
-<h2>Techology</h2>
+<h2>Technology</h2>
 <ol>
 <li><p>utteranc，一个基于 github issue 的评论区组件，比较老了。</p>
 <p><a href="https://utteranc.es/">https://utteranc.es/</a></p>

@@ -20,7 +20,7 @@ export default function Page() {
     <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
       Categories: Project &nbsp; &nbsp; 2023-10-24
     </span>
-    <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
+    <div className="flex text-start break-words flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
       <h1>丰都县交通局</h1>
 <blockquote>
 <p>记得下次好好评审项目以及拉黑胡*</p>

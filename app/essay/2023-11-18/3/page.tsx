@@ -18,9 +18,9 @@ export default function Page() {
       React-Design-Patterns
     </span>
     <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
-      Categories: Techology &nbsp; &nbsp; 2023-11-18
+      Categories: Technology &nbsp; &nbsp; 2023-11-18
     </span>
-    <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
+    <div className="flex text-start break-words flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
       <p>React 设计模式(译)</p>
 <p><a href="https://dev.to/refine/react-design-patterns-230o">原文链接</a></p>
 <h1>介绍</h1>

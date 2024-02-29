@@ -25,13 +25,13 @@ export default function Page() {
     <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
       Categories: Weekly &nbsp; &nbsp; 2024-02-05
     </span>
-    <div className="flex text-start flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
+    <div className="flex text-start break-words flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
       <blockquote>
 <p>这里是每周总结，记录每一周的趣事，技术分享以及学习生活。</p>
 </blockquote>
 <p>这个周刊的主要目的就是记录生活，分享技术以及当作一个小小的备忘录。
 也希望每周能顺利更新，先浅浅定个 15 期的目标。</p>
-<h2>Techology</h2>
+<h2>Technology</h2>
 <ol>
 <li><p>一个有趣的烟花跟随样式</p>
 <p><a href="https://codepen.io/leimapapa/pen/XWGMrvo">https://codepen.io/leimapapa/pen/XWGMrvo</a></p>
