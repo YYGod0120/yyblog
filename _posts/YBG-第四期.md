@@ -21,7 +21,7 @@ excerpt: 这里是每周总结，记录每一周的趣事，技术分享以及�
 
 ## Study
 
-1. [CSS画多边形及clip-path: polygon()属性原理](https://juejin.cn/post/7100830429405511710): 我在项目中遇到了需要多边形，甚至需要圆角多边形的需求，比如说如何画一个[圆角三角形](https://juejin.cn/post/7100830429405511710)。
+1. [CSS画多边形及clip-path: polygon()属性原理](https://juejin.cn/post/7100830429405511710): 我在项目中遇到了需要多边形，甚至需要圆角多边形的需求，比如说如何画一个[圆角三角形](https://www.cnblogs.com/coco1s/p/15009605.html)。
 
 2. [自定义你的滚动条](https://www.freecodecamp.org/chinese/news/css-scrollbar-tutorial/): 同样是项目推动学习，值得注意的是从chrome121开始也同时支持scrollbar-width 和 scrollbar-color 属性。
 
