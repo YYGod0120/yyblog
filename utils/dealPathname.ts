@@ -1,24 +1,26 @@
-import { DATA } from "@/app/lib/fileData";
+import { DATA } from "@/app/[language]/lib/fileData";
+import { languages } from "@/app/i18n/setting";
 export function splitPathname(path: string): string {
   const part = path.split("/");
   const len = part.length;
-  if (len <= 2) {
-    if (part[0] === "" && part[1] === "") {
-      return "Stay humble,Keep moving";
-    } else if (part[0] === "" && part[1] === "about") {
+  console.log(part, languages);
+
+  if (languages.indexOf(part[2])) {
+    if (part.indexOf("about") !== -1) {
       return "About";
-    } else if (part[0] === "" && part[1] === "categories") {
+    } else if (part.indexOf("categories") !== -1) {
       return "Categories";
+    } else if (part.indexOf("essay") !== -1) {
+      return (
+        DATA.find((i) => {
+          return (
+            i.date === part[part.length - 2] && i.id === part[part.length - 1]
+          );
+        })?.title || "404"
+      );
     } else {
-      return "404";
+      return "StayHumbleKeepMoving";
     }
-  } else {
-    return (
-      DATA.find((i) => {
-        return (
-          i.date === part[part.length - 2] && i.id === part[part.length - 1]
-        );
-      })?.title || "404"
-    );
   }
+  return "404";
 }
