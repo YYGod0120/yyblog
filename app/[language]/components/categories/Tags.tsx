@@ -1,6 +1,8 @@
 import React from "react";
 import { DATA } from "@/app/[language]/lib/fileData";
 import { countCategories } from "@/utils/Categories";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 export default function Tags() {
   const tags = countCategories(DATA);
   return (
@@ -8,9 +10,12 @@ export default function Tags() {
       {Object.keys(tags).map((tag, index) => {
         return (
           <div key={index} className="  mr-4 text-white ">
-            <span className=" rounded-l bg-slate-500 px-2 py-1 text-sm">
+            <Link
+              className="rounded-l bg-slate-500 px-2 py-1 text-sm"
+              href={`#${tag}`}
+            >
               {tag}
-            </span>
+            </Link>
             <span className="rounded-r bg-black p-1 text-sm">{tags[tag]}</span>
           </div>
         );

@@ -1,10 +1,11 @@
 "use client";
+// TODO 小幽灵在切换的时候会卡住
+// TODO 客户端组件没法挂在服务端下
 
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { GhostPointer } from "./GhostPointer";
 import { MyTypeWrite } from "./TypeWrite";
-import { Trans } from "react-i18next/TransWithoutContext";
 import LanSwitcher from "./LanSwitcher";
 export type Tag = {
   name: string;
@@ -57,6 +58,7 @@ export default function Header({
           <LanSwitcher language={language}></LanSwitcher>
         </div>
       </div>
+
       <GhostPointer>
         <MyTypeWrite language={language} />
       </GhostPointer>

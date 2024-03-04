@@ -2,8 +2,6 @@ import { DATA } from "@/app/[language]/lib/fileData";
 import { languages } from "@/app/i18n/setting";
 export function splitPathname(path: string): string {
   const part = path.split("/");
-  const len = part.length;
-  console.log(part, languages);
 
   if (languages.indexOf(part[2])) {
     if (part.indexOf("about") !== -1) {

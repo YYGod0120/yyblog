@@ -8,6 +8,7 @@ import { DATA } from "@/app/[language]/lib/fileData";
 
 export default function Categories() {
   const tags = countCategories(DATA);
+
   return (
     <div>
       <Tags />
@@ -16,6 +17,7 @@ export default function Categories() {
           <div
             key={index}
             className=" mt-8 flex flex-col rounded bg-white px-3 py-3 text-start shadow-lg lg:px-12 lg:py-6"
+            id={tag}
           >
             <div className="mb-5 cursor-default text-2xl font-bold">{tag}</div>
             {DATA.filter((item) => {
