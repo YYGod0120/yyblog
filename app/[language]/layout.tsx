@@ -23,15 +23,15 @@ export default async function RootLayout({
   const defaultTags: Tag[] = [
     {
       name: t("Categories"),
-      href: "/categories",
+      href: `/${language}/categories`,
     },
     {
       name: t("About"),
-      href: "/about",
+      href: `/${language}/about`,
     },
     {
       name: t("Weekly"),
-      href: "/",
+      href: `/${language}/0`,
     },
   ];
   return (
