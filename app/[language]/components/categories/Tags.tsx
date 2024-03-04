@@ -2,9 +2,11 @@ import React from "react";
 import { DATA } from "@/app/[language]/lib/fileData";
 import { countCategories } from "@/utils/Categories";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-export default function Tags() {
+import { useTranslation } from "@/app/i18n";
+
+export default async function Tags({ language }: { language: string }) {
   const tags = countCategories(DATA);
+  const { t } = await useTranslation(language, "translation");
   return (
     <div className="mb-5 mt-5 flex cursor-default flex-row">
       {Object.keys(tags).map((tag, index) => {
@@ -14,7 +16,7 @@ export default function Tags() {
               className="rounded-l bg-slate-500 px-2 py-1 text-sm"
               href={`#${tag}`}
             >
-              {tag}
+              {t(tag)}
             </Link>
             <span className="rounded-r bg-black p-1 text-sm">{tags[tag]}</span>
           </div>

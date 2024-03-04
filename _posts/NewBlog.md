@@ -140,6 +140,88 @@ export function HtmlToNext(html: string) {
 
 通过对解析后 html 的修改，主要是用正则，实现 html 向 TSX(Next)的转化。
 
+# 3月4号更新：
+
+更新了英文版，主要采用的是Next的中间件-`middleware.js`以及`react-i18next`和`i18next`,这两个库i18n转化库。
+
+```javascript
+export function middleware(req) {
+  let lng;
+  if (req.cookies.has(cookieName))
+    lng = acceptLanguage.get(req.cookies.get(cookieName).value);
+  if (!lng) lng = acceptLanguage.get(req.headers.get("Accept-Language"));
+  if (!lng) lng = fallbackLng;
+
+  // Redirect if lng in path is not supported
+  // 记住用户默认使用的语言
+  if (
+    !languages.some((loc) => req.nextUrl.pathname.startsWith(`/${loc}`)) &&
+    !req.nextUrl.pathname.startsWith("/_next")
+  ) {
+    return NextResponse.redirect(
+      new URL(`/${lng}${req.nextUrl.pathname}`, req.url),
+    );
+  }
+  // 跳转页面同时保持语言设置
+  if (req.headers.has("referer")) {
+    const refererUrl = new URL(req.headers.get("referer"));
+    const lngInReferer = languages.find((l) =>
+      refererUrl.pathname.startsWith(`/${l}`),
+    );
+    const response = NextResponse.next();
+    if (lngInReferer) response.cookies.set(cookieName, lngInReferer);
+    return response;
+  }
+
+  return NextResponse.next();
+}
+```
+
+这一段是中间件主要的代码，作用是用户使用不支持语言时自动跳转到默认语言，记住用户每次结束后使用的语言以及页面跳转时记住用户的语言选择。
+
+最后在每个page都使用`useTranslation`转化语言。
+
+```tsx
+// About Page
+export default async function Page({
+  params: { language },
+}: {
+  params: { language: string };
+}) {
+  const { t } = await useTranslation(language, "translation");
+
+  return (
+    <div className=" mt-8 flex flex-col rounded bg-white px-4 py-3 text-start shadow-lg md:px-14 md:py-10 ">
+      <div className="mb-5 cursor-default text-3xl font-bold">
+        {t("AboutMe")}
+      </div>
+      <div className="ml-3 text-lg">
+        <li className="mb-5">💬 {t("line1")}</li>
+        <li className="mb-5">
+          👨‍💻 {t("line2")}
+          <a
+            href="https://redrock.team/"
+            className=" hover-underline-animation text-visit-font no-underline"
+          >
+            {t("official")}
+          </a>
+        </li>
+        <li className="mb-5">
+          🤝{t("line3")}
+          <a
+            href="https://www.google.com/intl/zh-CN_cn/gmail/about/"
+            className=" hover-underline-animation text-visit-font no-underline"
+          >
+            yeyan308911@gmail.com
+          </a>
+        </li>
+        <li className="mb-5">🌱{t("line4")}</li>
+      </div>
+    </div>
+  );
+}
+```
+
 # 总结
 
 博客本体不难，主要是动画和移动适配稍微麻烦。
@@ -154,3 +236,4 @@ CLI 的难点在于解析文章以及路径问题。
 - [picocolors](https://github.com/alexeyraspopov/picocolors)：命令行颜色
 - [cac](https://github.com/cacjs/cac)：构建命令行工具的 JavaScript/TypeScript 框架
 - [codepen](https://codepen.io/)： 动画及特别的 404 页面都来源于此
+- [react-i18next](https://github.com/i18next/react-i18next) i18n for react
