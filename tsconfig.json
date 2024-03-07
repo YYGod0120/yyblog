@@ -29,6 +29,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "script.js"
-, "middleware.js"  ],
+, "midre.js"  ],
   "exclude": ["node_modules"]
 }

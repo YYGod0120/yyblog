@@ -5,6 +5,8 @@ import { languages } from "@/app/i18n/setting";
 import "./globals.css";
 import { dir } from "i18next";
 import { useTranslation } from "../i18n";
+import { GhostPointer } from "./components/GhostPointer";
+import { MyTypeWrite } from "./components/TypeWrite";
 const roboto = localFont({
   src: "../../public/fonts/LXGWWenKaiLite-Light.ttf",
   display: "swap",
@@ -12,6 +14,7 @@ const roboto = localFont({
 export async function generateStaticParams() {
   return languages.map((language) => ({ language }));
 }
+
 export default async function RootLayout({
   children,
   params: { language },

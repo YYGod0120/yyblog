@@ -1,12 +1,13 @@
-import { useTranslation } from "@/app/i18n";
+import { useTranslation } from "@/app/i18n/client";
 import i18n from "@/public/i18n.png";
 
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-export default async function LanSwitcher({ language }: { language: string }) {
+
+export default function LanSwitcher({ language }: { language: string }) {
   const pathname = usePathname();
-  const { t } = await useTranslation(language, "translation");
+  const { t } = useTranslation(language, "translation");
   const newURL = pathname.replace(`${language}`, `${t(language)}`);
 
   return (
