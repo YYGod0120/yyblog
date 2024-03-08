@@ -1,6 +1,6 @@
 export const SCRIPT = `let mouse = { x: window.innerWidth / 2, y: 150, dir: "" };
 let clicked = false;
-console.log(1111)
+console.log("Loaded")
 const getMouse = (e) => {
   // 获取鼠标垂直坐标
 let mouseY = e.clientY || e.pageY || 0 || window.innerHeight / 2;
@@ -8,7 +8,6 @@ let mouseY = e.clientY || e.pageY || 0 || window.innerHeight / 2;
 // 设置最大和最小高度限制
 const maxY = 170;
 const minY = 0;
-
 // 限制鼠标垂直坐标在最大值和最小值之间
 mouseY = Math.max(minY, Math.min(maxY, mouseY));
   mouse = {
@@ -34,17 +33,18 @@ Ghost Follow
 class GhostFollow {
   constructor(options) {
     Object.assign(this, options);
-
     this.el = document.querySelector("#ghost");
     this.mouth = document.querySelector(".ghost__mouth");
     this.eyes = document.querySelector(".ghost__eyes");
     this.pos = {
-      x: 0,
-      y: 0,
+      x: 100,
+      y: 100,
     };
+    
   }
 
   follow() {
+  
     this.distX = mouse.x - this.pos.x;
     this.distY = mouse.y - this.pos.y;
 
@@ -91,6 +91,8 @@ class GhostFollow {
       "px) scale(" +
       this.scaleMouth +
       ")";
+   
+      
   }
 }
 

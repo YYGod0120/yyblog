@@ -13,7 +13,7 @@ export default async function Tags({ language }: { language: string }) {
         return (
           <div key={index} className="  mr-4 text-white ">
             <Link
-              className="rounded-l bg-slate-500 px-2 py-1 text-sm"
+              className="rounded-l bg-slate-500 px-2 py-1 text-sm text-white  hover:text-default-font"
               href={`#${tag}`}
             >
               {t(tag)}

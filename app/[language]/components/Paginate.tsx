@@ -10,9 +10,12 @@ export default function Paginate({ pages, nowPage, language }: Paginate) {
 
   const pagesArray = Array.from({ length: pageItems }, (_, index) => index);
   return (
-    <div className="mt-5 flex  cursor-pointer flex-row items-center justify-center space-x-5 text-2xl ">
+    <div className="mt-5 flex cursor-pointer flex-row items-center justify-center space-x-5 text-2xl ">
       {nowPage !== 0 ? (
-        <Link href={`/${language}/${nowPage - 1}`} className="hover:font-bold">
+        <Link
+          href={`/${language}/${nowPage - 1}`}
+          className="text-default-font hover:font-bold hover:text-default-font"
+        >
           {"＜"}
         </Link>
       ) : null}
@@ -22,7 +25,11 @@ export default function Paginate({ pages, nowPage, language }: Paginate) {
               <Link
                 href={`/${language}/${index}`}
                 key={index}
-                className={index !== nowPage ? "hover:font-bold" : "font-bold"}
+                className={
+                  index !== nowPage
+                    ? "text-default-font hover:font-bold hover:text-default-font"
+                    : "font-bold text-default-font hover:text-default-font"
+                }
               >
                 {index + 1}
               </Link>
@@ -30,7 +37,10 @@ export default function Paginate({ pages, nowPage, language }: Paginate) {
           })
         : null}
       {nowPage !== pageItems - 1 ? (
-        <Link className="hover:font-bold" href={`/${language}/${nowPage + 1}`}>
+        <Link
+          className="text-default-font hover:font-bold hover:text-default-font"
+          href={`/${language}/${nowPage + 1}`}
+        >
           {"＞"}
         </Link>
       ) : null}

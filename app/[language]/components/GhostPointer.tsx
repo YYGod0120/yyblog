@@ -1,3 +1,4 @@
+"use client";
 import React, { ReactNode } from "react";
 import Script from "next/script";
 import { SCRIPT } from "@/public/common/ghost";
@@ -6,7 +7,13 @@ import "@/styles/ghost-pointer.css";
 type GhostPointerProps = {
   children?: ReactNode;
 };
-
+function GhostScript(SCRIPT: string) {
+  return (
+    <Script id="ghost-cursor" strategy="lazyOnload">
+      {SCRIPT}
+    </Script>
+  );
+}
 export function GhostPointer({ children }: GhostPointerProps) {
   return (
     <div className="hidden h-[250px] w-[100vw] bg-[#2C3E50] md:block">
@@ -42,10 +49,7 @@ export function GhostPointer({ children }: GhostPointerProps) {
           </filter>
         </defs>
       </svg>
-
-      <Script id="ghost-cursor" strategy="beforeInteractive">
-        {SCRIPT}
-      </Script>
+      {GhostScript(SCRIPT)}
     </div>
   );
 }

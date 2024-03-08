@@ -1,11 +1,11 @@
 // TODO 小幽灵在切换的时候会卡住
-// TODO 客户端组件没法挂在服务端下
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { GhostPointer } from "./GhostPointer";
+
 import { MyTypeWrite } from "./TypeWrite";
 import LanSwitcher from "./LanSwitcher";
+import { GhostPointer } from "./GhostPointer";
 export type Tag = {
   name: string;
   href: string;

@@ -14,6 +14,7 @@ export default function LanSwitcher({ language }: { language: string }) {
     <div className=" hidden lg:block">
       <Link
         href={`${newURL}`}
+        replace
         className="flex items-center font-semibold text-default-font no-underline hover:text-visit-font"
       >
         <Image

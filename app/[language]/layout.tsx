@@ -5,8 +5,8 @@ import { languages } from "@/app/i18n/setting";
 import "./globals.css";
 import { dir } from "i18next";
 import { useTranslation } from "../i18n";
-import { GhostPointer } from "./components/GhostPointer";
-import { MyTypeWrite } from "./components/TypeWrite";
+
+import { SCRIPT } from "@/public/common/ghost";
 const roboto = localFont({
   src: "../../public/fonts/LXGWWenKaiLite-Light.ttf",
   display: "swap",
