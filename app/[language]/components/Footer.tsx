@@ -8,8 +8,8 @@ import "@/styles/hover-underline-animation.css";
 
 export default function Footer() {
   return (
-    <div className=" mt-5 flex">
-      © {YEARRANGE}
+    <div className=" mt-5 flex items-center justify-center">
+      <div className="mt-[0.5px] h-[24px] leading-[24px]">© {YEARRANGE}</div>
       <div className=" ml-6 flex flex-row space-x-2 leading-[24px]">
         <Image
           src="/imgs/github.png"

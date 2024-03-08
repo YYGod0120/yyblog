@@ -11,7 +11,7 @@ export default function LanSwitcher({ language }: { language: string }) {
   const newURL = pathname.replace(`${language}`, `${t(language)}`);
 
   return (
-    <div>
+    <div className=" hidden lg:block">
       <Link
         href={`${newURL}`}
         className="flex items-center font-semibold text-default-font no-underline hover:text-visit-font"
