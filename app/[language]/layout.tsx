@@ -6,7 +6,6 @@ import "./globals.css";
 import { dir } from "i18next";
 import { useTranslation } from "../i18n";
 
-import { SCRIPT } from "@/public/common/ghost";
 const roboto = localFont({
   src: "../../public/fonts/LXGWWenKaiLite-Light.ttf",
   display: "swap",

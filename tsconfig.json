@@ -29,6 +29,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "script.js"
-, "midre.js", "app/[language]/components/GhostPointer.tsx"  ],
+, "midre.js", "app/[language]/components/GhostPointer.jsx"  ],
   "exclude": ["node_modules"]
 }
