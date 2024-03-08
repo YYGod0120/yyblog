@@ -144,7 +144,19 @@ export function HtmlToNext(html: string) {
 
 更新了英文版，主要采用的是Next的中间件-`middleware.js`以及`react-i18next`和`i18next`,这两个库i18n转化库。
 
+配置的教程在[这里](https://locize.com/blog/next-app-dir-i18n/)
+
 ```javascript
+import { NextResponse } from "next/server";
+import acceptLanguage from "accept-language";
+import { fallbackLng, languages, cookieName } from "@/app/i18n/setting";
+
+acceptLanguage.languages(languages);
+
+export const config = {
+  // matcher: '/:lng*'
+  matcher: ["/((?!api|_next/static|_next/image|imgs|favicon.ico|sw.js).*)"],
+};
 export function middleware(req) {
   let lng;
   if (req.cookies.has(cookieName))
@@ -153,7 +165,7 @@ export function middleware(req) {
   if (!lng) lng = fallbackLng;
 
   // Redirect if lng in path is not supported
-  // 记住用户默认使用的语言
+
   if (
     !languages.some((loc) => req.nextUrl.pathname.startsWith(`/${loc}`)) &&
     !req.nextUrl.pathname.startsWith("/_next")
@@ -162,7 +174,6 @@ export function middleware(req) {
       new URL(`/${lng}${req.nextUrl.pathname}`, req.url),
     );
   }
-  // 跳转页面同时保持语言设置
   if (req.headers.has("referer")) {
     const refererUrl = new URL(req.headers.get("referer"));
     const lngInReferer = languages.find((l) =>
@@ -177,55 +188,21 @@ export function middleware(req) {
 }
 ```
 
-这一段是中间件主要的代码，作用是用户使用不支持语言时自动跳转到默认语言，记住用户每次结束后使用的语言以及页面跳转时记住用户的语言选择。
+这一段是中间件主要的代码，作用是用户使用不支持语言时自动跳转到默认语言，记住用户每次结束后使用的语言。
 
-最后在每个page都使用`useTranslation`转化语言。
+**注意:**
 
-```tsx
-// About Page
-export default async function Page({
-  params: { language },
-}: {
-  params: { language: string };
-}) {
-  const { t } = await useTranslation(language, "translation");
-
-  return (
-    <div className=" mt-8 flex flex-col rounded bg-white px-4 py-3 text-start shadow-lg md:px-14 md:py-10 ">
-      <div className="mb-5 cursor-default text-3xl font-bold">
-        {t("AboutMe")}
-      </div>
-      <div className="ml-3 text-lg">
-        <li className="mb-5">💬 {t("line1")}</li>
-        <li className="mb-5">
-          👨‍💻 {t("line2")}
-          <a
-            href="https://redrock.team/"
-            className=" hover-underline-animation text-visit-font no-underline"
-          >
-            {t("official")}
-          </a>
-        </li>
-        <li className="mb-5">
-          🤝{t("line3")}
-          <a
-            href="https://www.google.com/intl/zh-CN_cn/gmail/about/"
-            className=" hover-underline-animation text-visit-font no-underline"
-          >
-            yeyan308911@gmail.com
-          </a>
-        </li>
-        <li className="mb-5">🌱{t("line4")}</li>
-      </div>
-    </div>
-  );
-}
+```js
+export const config = {
+  // matcher: '/:lng*'
+  matcher: ["/((?!api|_next/static|_next/image|imgs|favicon.ico|sw.js).*)"],
+};
 ```
 
-# 总结
+`matcher`匹配器用于使得中间件在特定的路径上执行。
+这个字符串是负向预测先行，用于匹配不包含以上内容的字符串片段，你需要稍微修改正则以匹配你的文件目录。
 
-博客本体不难，主要是动画和移动适配稍微麻烦。
-CLI 的难点在于解析文章以及路径问题。
+# 附件
 
 > 一些使用到的库或者代码：
 
