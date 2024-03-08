@@ -1,5 +1,5 @@
 import { useTranslation } from "@/app/i18n/client";
-import i18n from "@/public/i18n.png";
+import i18n from "@/public/imgs/i18n.png";
 
 import Link from "next/link";
 import Image from "next/image";
