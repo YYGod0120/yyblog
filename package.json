@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "ybg compile && next dev ",
+    "d": "ybg compile && ybg deploy",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
