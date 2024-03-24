@@ -1,5 +1,5 @@
 {
-  "deploy": {
+  "deployCon": {
     "commitMessage": "docs: new essay",
     "remote_store": "https://github.com/YYGod0120/yyblog",
     "branch": "master"
