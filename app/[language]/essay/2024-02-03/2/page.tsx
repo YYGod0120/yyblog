@@ -195,6 +195,21 @@ export function middleware\(req\) \{
 ` }</SyntaxHighlighter>
 <p><code>matcher</code>匹配器用于使得中间件在特定的路径上执行。
 这个字符串是负向预测先行，用于匹配不包含以上内容的字符串片段，你需要稍微修改正则以匹配你的文件目录。</p>
+<h1>3月24号更新：</h1>
+<p><strong>一键部署</strong></p>
+<p>选择一个静态页面管理网站，比如githubpage或者vercrel，绑定自己的博客仓库。
+在根目录下设置<code>_blog.json</code>,配置文件：</p>
+<SyntaxHighlighter language="json" style={oneLight} showLineNumbers>{ `\{
+  "deployCon"\: \{
+    "commitMessage"\: "docs\: new essay"\, \/\/\每\次commit\的message
+    "remote_store_url"\: "https\:\/\/github\.com\/YYGod0120\/yyblog\.git"\, \/\/\远\程\仓\库url
+    "remote_store_name"\: "origin"\, \/\/\别\名
+    "branch"\: "main" \/\/\想\要\提\交\的\分\支
+  \}
+\}
+` }</SyntaxHighlighter>
+<p>然后使用<code>ybg init</code>进行初始化。
+最后每次写完文章执行<code>pnpm d</code>进行部署。</p>
 <h1>附件</h1>
 <blockquote>
 <p>一些使用到的库或者代码：</p>

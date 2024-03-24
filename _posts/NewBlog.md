@@ -202,6 +202,27 @@ export const config = {
 `matcher`匹配器用于使得中间件在特定的路径上执行。
 这个字符串是负向预测先行，用于匹配不包含以上内容的字符串片段，你需要稍微修改正则以匹配你的文件目录。
 
+# 3月24号更新：
+
+**一键部署**
+
+选择一个静态页面管理网站，比如githubpage或者vercrel，绑定自己的博客仓库。
+在根目录下设置`_blog.json`,配置文件：
+
+```json
+{
+  "deployCon": {
+    "commitMessage": "docs: new essay", //每次commit的message
+    "remote_store_url": "https://github.com/YYGod0120/yyblog.git", //远程仓库url
+    "remote_store_name": "origin", //别名
+    "branch": "main" //想要提交的分支
+  }
+}
+```
+
+然后使用`ybg init`进行初始化。
+最后每次写完文章执行`pnpm d`进行部署。
+
 # 附件
 
 > 一些使用到的库或者代码：
