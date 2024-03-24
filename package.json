@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "ybg init"
+    "prepare": "if [ \"$NODE_ENV\" != \"production\" ]; then ybg init; fi"
   },
   "dependencies": {
     "accept-language": "^3.0.18",
