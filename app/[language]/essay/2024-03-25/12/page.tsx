@@ -45,6 +45,8 @@ export default function Page() {
 生活所迫，没得办法</p>
 </li>
 <li><p>周末给博客写了一个一键部署，懒得每次都手动提交了。<del>文章翻译还是懒得动</del></p>
+<p>其实就是读取<code>_blog.json</code>下的github地址以及对应分支，提供脚本(主要利用<code>spawn</code>实现shell命令)自动提交commit以及push远程。
+加上Vercel的ci就实现了一键部署。</p>
 </li>
 </ul>
 
