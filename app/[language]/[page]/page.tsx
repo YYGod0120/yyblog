@@ -1,16 +1,22 @@
 import Link from "next/link";
 import { DATA } from "@/app/[language]/lib/fileData";
 import Paginate from "@/app/[language]/components/Paginate";
+import { useTranslation } from "@/app/i18n";
 
-export default function Home({
+export default async function Home({
   params: { language, page },
 }: {
   params: { language: string; page: string };
 }) {
+  const { t } = await useTranslation(language, "translation");
+
   const pageNumber = parseInt(page);
+  const noWeeklyData = DATA.filter((item) => {
+    return item.categories !== "Weekly";
+  });
   return (
     <div className="mt-8">
-      {DATA.slice(pageNumber * 5, (pageNumber + 1) * 5).map((file, index) => (
+      {noWeeklyData.slice(pageNumber * 5, (pageNumber + 1) * 5).map((file) => (
         <div
           className=" mb-[30px]  cursor-pointer rounded bg-white text-start shadow-lg"
           key={file.id}
@@ -20,15 +26,19 @@ export default function Home({
             className="no-underline"
           >
             <div className="px-10 pb-8 pt-8  text-default-font hover:text-visit-font ">
-              <div className="mb-4 text-3xl font-bold">{file.title}</div>
+              <div className="mb-4 text-3xl font-bold">{t(file.title)}</div>
               <div className=" text-lg font-bold">
-                [{file.date}]&nbsp;&nbsp;{file.excerpt}
+                [{file.date}]&nbsp;&nbsp;{t(file.excerpt)}
               </div>
             </div>
           </Link>
         </div>
       ))}
-      <Paginate pages={DATA.length} nowPage={pageNumber} language={language} />
+      <Paginate
+        pages={noWeeklyData.length}
+        nowPage={pageNumber}
+        language={language}
+      />
     </div>
   );
 }

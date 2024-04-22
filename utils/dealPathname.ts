@@ -1,5 +1,6 @@
 import { DATA } from "@/app/[language]/lib/fileData";
 import { languages } from "@/app/i18n/setting";
+import { getDayOfWeek } from "./dayOfWeek";
 export function splitPathname(path: string): string {
   const part = path.split("/");
 
@@ -17,7 +18,7 @@ export function splitPathname(path: string): string {
         })?.title || "404"
       );
     } else {
-      return "StayHumbleKeepMoving";
+      return getDayOfWeek();
     }
   }
   return "404";

@@ -24,6 +24,7 @@ export default function Header({
   language: string;
 }) {
   const [tags, setTags] = useState<Tag[]>(menus);
+
   const handleResize = () => {
     window.innerWidth > 1024
       ? setTags(menus)
@@ -31,14 +32,12 @@ export default function Header({
         ? setTags(menus.slice(0, 2))
         : setTags(menus.slice(0, 3));
   };
-
   useEffect(() => {
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
   return (
     <div className="flex w-[100vw] flex-col items-center  bg-white ">
       <div className="flex  h-[45px]  w-[95vw] items-center text-2xl lg:w-[900px]">

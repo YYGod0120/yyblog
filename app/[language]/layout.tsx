@@ -12,9 +12,9 @@ const roboto = localFont({
   src: "../../public/fonts/LXGWWenKaiLite-Light.ttf",
   display: "swap",
 });
-export async function generateStaticParams() {
-  return languages.map((language) => ({ language }));
-}
+// export async function generateStaticParams() {
+//   return languages.map((language) => ({ language }));
+// }
 
 // either Static metadata
 export const metadata: Metadata = {

@@ -14,5 +14,22 @@
   "line4": "This blog was built through next and is not perfect, but if you like it, you can click below to go to github and give it a thumbs up.",
   "Project": "Project",
   "Life": "Life",
-  "Technology": "Technology"
+  "Technology": "Technology",
+  "MYCHAT": "MYCHAT",
+  "XHRvsFetch": "XHRvsFetch",
+  "NewBlog": "New Blog",
+  "我的2023": "My 2023",
+  "RSC": "RSC",
+  "一个基于大模型的类GPT的SPA应用": "A SPA based on a large model class GPT.",
+  "什么是XHR，什么是Fetch，为什么用XHR,为什么用Fetch": "What is XHR, what is Fetch, why use XHR, why use Fetch",
+  "有一个由自己打造的博客，是每个前端开发必备项目。我通过半个月时间，尝试Next搭建了一个博客。": "Having a blog created by yourself is a must-have for every front-end developer. I spent half a month trying Next to build a blog.",
+  "2023年终总结": "2023 year-end summary",
+  "What is RSC, and how it works": "What is RSC, and how it works",
+  "Sunday": "No cross, no crown",
+  "Monday": "Better late than never",
+  "Tuesday": "Light tomorrow with today",
+  "Wednesday": "While there is life there is hope",
+  "Thursday": "All it takes is faith and trust",
+  "Friday": "Be fearless",
+  "Saturday": "Stay Humble,Keep Moving"
 }
