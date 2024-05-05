@@ -37,7 +37,7 @@ export default function Page() {
 <Image src={host} alt="本地服务器" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "100%",
         height: 'auto',
       }} />
 访问172即可。</li>

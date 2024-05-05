@@ -30,7 +30,7 @@ export default function Page() {
 <Image src={axiosWeak} alt="github上的closed-issue" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "100%",
         height: 'auto',
       }} />
 
@@ -45,7 +45,7 @@ export default function Page() {
 <Image src={font} alt="github上的closed-issue" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "100%",
         height: 'auto',
       }} /></li>
 </ol>

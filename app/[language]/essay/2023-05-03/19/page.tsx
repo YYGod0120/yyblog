@@ -71,7 +71,7 @@ export default function Page() {
 <Image src={day1_station} alt="" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} />
 人多到 6 点排队吃小龙虾要排上 130 桌，换了一家偏僻角落的店铺才能吃上。
@@ -79,7 +79,7 @@ export default function Page() {
 <Image src={feifeixiazhuang} alt="肥肥虾庄" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} />
 
@@ -87,7 +87,7 @@ export default function Page() {
 <Image src={me_girlfriend} alt="轮渡上合照一张" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} />
 
@@ -95,13 +95,13 @@ export default function Page() {
 <Image src={bridge0} alt="桥头小亭子" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} />
 <Image src={bridge1} alt="长江大桥" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} />
 
@@ -112,7 +112,7 @@ export default function Page() {
 <Image src={guozao1} alt="热干面，烧卖，绿豆汤" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} />
 这家三鲜豆皮不好吃
@@ -120,7 +120,7 @@ export default function Page() {
 <Image src={guozao2} alt="三鲜豆皮" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} />
 
@@ -128,7 +128,7 @@ export default function Page() {
 <Image src={gude} alt="古德寺" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} />
 一根 15，还不错的景区特色雪糕
@@ -136,7 +136,7 @@ export default function Page() {
 <Image src={gudexuegao} alt="古德寺特色雪糕" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} />
 
@@ -144,7 +144,7 @@ export default function Page() {
 <Image src={jianghang} alt="路经江汉桥" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} />
 
@@ -154,7 +154,7 @@ export default function Page() {
 <Image src={day2_night1} alt="就扭了个头买冰粉" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} />
 
@@ -162,7 +162,7 @@ export default function Page() {
 <Image src={huanghelou} alt="封面来源" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "600",
         height: 'auto',
       }} />
 
@@ -171,7 +171,7 @@ export default function Page() {
 <Image src={day3_m} alt="锅贴，热干面，绿豆汤米酒和燕麦豆浆" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} />
 
@@ -180,19 +180,19 @@ export default function Page() {
 <Image src={donhu1} alt="东湖" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} />
 <Image src={donhu2} alt="屈原纪念馆" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} />
 <Image src={donhu3} alt="美女在东湖" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "400",
         height: 'auto',
       }} />
 
@@ -201,19 +201,19 @@ export default function Page() {
 <Image src={cha} alt="心心念念的茶颜悦色" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "300",
         height: 'auto',
       }} />
 <Image src={chucai1} alt="楚采的红烧肉" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "300",
         height: 'auto',
       }} />
 <Image src={chucai2} alt="楚采的虾" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "300",
         height: 'auto',
       }} />
 
@@ -221,13 +221,13 @@ export default function Page() {
 <Image src={zhongshan} alt="路过旋转木马" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "600",
         height: 'auto',
       }} />
 <Image src={together} alt="合照" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "600",
         height: 'auto',
       }} />
 

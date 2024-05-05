@@ -28,13 +28,13 @@ export default function Page() {
 <Image src={project0} alt="项目截图1" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "100%",
         height: 'auto',
       }} />
 <Image src={project1} alt="项目截图2" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "100%",
         height: 'auto',
       }} />
 

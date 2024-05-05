@@ -65,7 +65,7 @@ export default function Page() {
 <Image src={nodejs} alt="nodejs新官网" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "100%",
         height: 'auto',
       }} /></li>
 </ol>

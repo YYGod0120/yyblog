@@ -38,7 +38,7 @@ export default function Page() {
 <Image src={SparkleMotion} alt="Sparkle Motion" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "100%",
         height: 'auto',
       }} />
 </li>
@@ -47,7 +47,7 @@ export default function Page() {
 <Image src={GhostCursor} alt="Ghost Cursor" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "100%",
         height: 'auto',
       }} />
 </li>
@@ -74,7 +74,7 @@ export default function Page() {
 <Image src={gametime} alt="=game-time" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "100%",
         height: 'auto',
       }} /></li>
 </ol>

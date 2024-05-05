@@ -50,13 +50,13 @@ export default function Page() {
 <Image src={music} alt="拙劣的模仿" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} />
 <Image src={venue} alt="后台管理" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} />
 
@@ -64,20 +64,20 @@ export default function Page() {
 <Image src={study} alt="学分统计" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} /></p>
 <p>在过去的一年里还有很多值得纪念的事情，比如武汉和长沙。
 <Image src={wuhan} alt="武汉" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} />
 <Image src={changsha} alt="长沙" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} /></p>
 <p>第一本纪念相册，第一次在外面跨年，第一次一个人生病去大医院看病。</p>
@@ -85,7 +85,7 @@ export default function Page() {
 <Image src={YYGod0120} alt="github年度总结" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} /></p>
 <h1>关于 2024</h1>

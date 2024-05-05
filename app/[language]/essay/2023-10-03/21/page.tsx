@@ -74,7 +74,7 @@ export default function Page() {
 <Image src={room} alt="房间" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "740",
         height: 'auto',
       }} />
 
@@ -82,7 +82,7 @@ export default function Page() {
 <Image src={jie} alt="五一广场" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "740",
         height: 'auto',
       }} /></p>
 <p>我们还是受不住各自宣传推销,走近了一家网红店吃小龙虾，但是最后选择了罗氏虾
@@ -90,19 +90,19 @@ export default function Page() {
 <Image src={firstdinner} alt="靓虾二哥" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "240",
         height: 'auto',
       }} />
 <Image src={firstdinner2} alt="靓虾二哥" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "240",
         height: 'auto',
       }} />
 <Image src={firstdinner3} alt="靓虾二哥" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "240",
         height: 'auto',
       }} /></p>
 <hr />
@@ -111,7 +111,7 @@ export default function Page() {
 <Image src={pic} alt="188的剪纸" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "740",
         height: 'auto',
       }} /></p>
 <p>杜甫江阁有专门拍照的的，设备挺齐全，会教我们摆 pose，拍的照片质量高，价格还可以，和剪纸可以说是鲜明对比。</p>
@@ -119,13 +119,13 @@ export default function Page() {
 <Image src={me} alt="杜甫江阁" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "360",
         height: 'auto',
       }} />
 <Image src={love} alt="杜甫江阁" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "360",
         height: 'auto',
       }} /></p>
 <h1>day2</h1>
@@ -135,7 +135,7 @@ export default function Page() {
 <Image src={breakfast} alt="10点的早餐" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "740",
         height: 'auto',
       }} />
 中午逛完博物馆，其实也就看了两个展厅，反正门票不用钱
@@ -144,7 +144,7 @@ export default function Page() {
 <Image src={lunch} alt="主打的就是丰富" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "740",
         height: 'auto',
       }} />
 休整一下</p>
@@ -153,31 +153,31 @@ export default function Page() {
 <Image src={yeshi} alt="杨帆夜市" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "140",
         height: 'auto',
       }} />
 <Image src={yeshi2} alt="杨帆夜市" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "140",
         height: 'auto',
       }} />
 <Image src={yeshi3} alt="杨帆夜市" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "140",
         height: 'auto',
       }} />
 <Image src={tea} alt="杨帆夜市" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "140",
         height: 'auto',
       }} />
 <Image src={milk} alt="杨帆夜市" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "140",
         height: 'auto',
       }} />
 逛完美食街还早，想着去渔人码头又太远，就又绕去五一广场了。
@@ -186,7 +186,7 @@ export default function Page() {
 <Image src={yexiao1} alt="一天四顿" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "740",
         height: 'auto',
       }} /></p>
 <h1>day3</h1>
@@ -195,20 +195,20 @@ export default function Page() {
 <Image src={icecream} alt="每个景区都少不了的纪念雪糕，不如武汉的好吃" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "240",
         height: 'auto',
       }} /></p>
 <Image src={lover_back} alt="江边健身道" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "240",
         height: 'auto',
       }} />
 
 <Image src={laomao} alt="青年毛" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "240",
         height: 'auto',
       }} />
 
@@ -217,13 +217,13 @@ export default function Page() {
 <Image src={seaandyou} alt="江边美女" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "370",
         height: 'auto',
       }} /></p>
 <Image src={ciba} alt="加了红糖的糍粑罢了" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "370",
         height: 'auto',
       }} />
 
@@ -233,7 +233,7 @@ export default function Page() {
 <Image src={lastlunch} alt="最后一顿" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "740",
         height: 'auto',
       }} />
 

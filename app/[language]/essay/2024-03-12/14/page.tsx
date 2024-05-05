@@ -58,7 +58,7 @@ export default function Page() {
 <Image src={mkmobile} alt="游戏" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "100%",
         height: 'auto',
       }} />
 </li>
@@ -67,7 +67,7 @@ export default function Page() {
 <Image src={aiqa} alt="网站截图" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "100%",
         height: 'auto',
       }} /></li>
 </ol>

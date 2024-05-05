@@ -75,7 +75,7 @@ export default async function requestUsername\(formData\) \{
 <Image src={reactservercomponents} alt="react-server-components" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} />
 
@@ -217,7 +217,7 @@ React 团队已经发布了对 webpack 的官方 RSC 支持， react-server-dom-
 <Image src={reactservercomponentsplaceholders} alt="react-server-components-placeholders" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} />
 它将被发送到浏览器上以完成最后一步</p>
@@ -248,7 +248,7 @@ function ClientComponent1\(\{children\}\) \{
 <Image src={reactservercomponentsclient} alt="react-server-components-client" 
       sizes="100vw"
       style={{
-        width: '100%',
+        width: "500",
         height: 'auto',
       }} />
 然后我们像往常一样渲染并将这棵树提交到 DOM 中！</p>

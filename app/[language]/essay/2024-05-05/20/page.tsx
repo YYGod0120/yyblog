@@ -1,21 +1,31 @@
 import Image from "next/image";
 import dynamic from "next/dynamic";
 //@ts-ignore
-import flower from "@/public/imgs/爱在川渝/flower.JPG";
+import flower from "@/public/imgs/爱在川渝/flower.jpg";
 //@ts-ignore
-import ciqikou from "@/public/imgs/爱在川渝/ciqikou.JPG";
+import flower1 from "@/public/imgs/爱在川渝/flower1.jpg";
 //@ts-ignore
-import chaotianmen from "@/public/imgs/爱在川渝/chaotianmen.JPG";
+import ciqikou from "@/public/imgs/爱在川渝/ciqikou.jpg";
 //@ts-ignore
-import jiefanbei from "@/public/imgs/爱在川渝/jiefanbei.JPG";
+import ciqikou1 from "@/public/imgs/爱在川渝/ciqikou1.jpg";
 //@ts-ignore
-import nanshan from "@/public/imgs/爱在川渝/nanshan.JPG";
+import chaotianmen from "@/public/imgs/爱在川渝/chaotianmen.jpg";
 //@ts-ignore
-import binqilin1 from "@/public/imgs/爱在川渝/binqilin1.JPG";
+import laifushi from "@/public/imgs/爱在川渝/laifushi.jpg";
+//@ts-ignore
+import nanshan from "@/public/imgs/爱在川渝/nanshan.jpg";
+//@ts-ignore
+import nanshan2 from "@/public/imgs/爱在川渝/nanshan2.jpg";
+//@ts-ignore
+import laojundon from "@/public/imgs/爱在川渝/laojundon.jpg";
+//@ts-ignore
+import binqilin1 from "@/public/imgs/爱在川渝/binqilin1.jpg";
+//@ts-ignore
+import naicha from "@/public/imgs/爱在川渝/naicha.jpg";
 //@ts-ignore
 import chuanglou from "@/public/imgs/爱在川渝/chuanglou.gif";
 //@ts-ignore
-import honyadon from "@/public/imgs/爱在川渝/honyadon.JPG";
+import honyadon from "@/public/imgs/爱在川渝/honyadon.jpg";
 // @ts-ignore
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 // @ts-ignore
@@ -50,27 +60,49 @@ export default function Page() {
           <blockquote>
             <p>Flower for love</p>
           </blockquote>
-          <Image
-            src={flower}
-            alt="flower for love"
-            sizes="100vw"
-            style={{
-              width: "360px",
-              height: "auto",
-            }}
-          />
 
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <Image
+              src={flower}
+              alt="flower for love"
+              sizes="100vw"
+              style={{
+                width: "360",
+                height: "auto",
+              }}
+            />
+            <Image
+              src={flower1}
+              alt="flower for love"
+              sizes="100vw"
+              style={{
+                width: "360",
+                height: "auto",
+              }}
+            />
+          </div>
           <p>2点钟接到女朋友，3点半到酒店，四点半出门吃了第一顿重庆火锅。</p>
           <p>正好离磁器口近，晚上就逛逛磁器口了。</p>
-          <Image
-            src={ciqikou}
-            alt="磁器口"
-            sizes="100vw"
-            style={{
-              width: "360px",
-              height: "auto",
-            }}
-          />
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <Image
+              src={ciqikou}
+              alt="磁器口"
+              sizes="100vw"
+              style={{
+                width: "360",
+                height: "auto",
+              }}
+            />
+            <Image
+              src={ciqikou1}
+              alt="磁器口"
+              sizes="100vw"
+              style={{
+                width: "360",
+                height: "auto",
+              }}
+            />
+          </div>
 
           <p>只可惜天气不是那么完美，带着一点细雨。</p>
           <h1>第二天</h1>
@@ -79,47 +111,64 @@ export default function Page() {
             这次不得不说一下男女生出门的区别了，男生洗漱拉屎穿衣服10min轻松搞定，女生化妆就要化45min，七七八八的事情够我睡一个回笼觉。
           </p>
           <p>早上天气还行，我们直接去了朝天门和来福士。</p>
-          <Image
-            src={chaotianmen}
-            alt="朝天门"
-            sizes="100vw"
-            style={{
-              width: "360px",
-              height: "auto",
-            }}
-          />
-
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <Image
+              src={chaotianmen}
+              alt="朝天门"
+              sizes="100vw"
+              style={{
+                width: "360",
+                height: "auto",
+              }}
+            />
+            <Image
+              src={laifushi}
+              alt="来福士"
+              sizes="100vw"
+              style={{
+                width: "360",
+                height: "auto",
+              }}
+            />
+          </div>
           <blockquote>
             <p>
               上次被剪纸画坑了188，这次被流水线拍照拍了100块钱。真的是随意拍加流水线工程。
             </p>
           </blockquote>
-          <p>
-            人相比于解放碑还是少了，解放碑才是真正的水泄不通，而且还是大中午。
-          </p>
-          <Image
-            src={jiefanbei}
-            alt="解放碑"
-            sizes="100vw"
-            style={{
-              width: "360px",
-              height: "auto",
-            }}
-          />
-
           <p>中午到2点多才吃午饭，上了南山到我学校门口吃顿串串。</p>
           <p>
             吃饱喝足去逛了逛老街一路逛到老君洞。爬坡爬坡还是爬坡。最后老君洞人也一样还是好多。
           </p>
-          <Image
-            src={nanshan}
-            alt="南山"
-            sizes="100vw"
-            style={{
-              width: "360px",
-              height: "auto",
-            }}
-          />
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <Image
+              src={nanshan}
+              alt="南山"
+              sizes="100vw"
+              style={{
+                width: "240",
+                height: "auto",
+              }}
+            />
+            <Image
+              src={nanshan2}
+              alt="南山"
+              sizes="100vw"
+              style={{
+                width: "240",
+                height: "auto",
+              }}
+            />
+            <Image
+              src={laojundon}
+              alt="老君洞"
+              sizes="100vw"
+              style={{
+                width: "240",
+                height: "auto",
+              }}
+            />
+          </div>
 
           <p>不得不说南山上风景还是在线的。</p>
           <p>
@@ -131,15 +180,27 @@ export default function Page() {
           <p>
             目的地山城步道和十八梯。这两个地方本来应该是挺不错的徒步的路线，从居民楼穿来穿去，体验一下那种山城的氛围。但是五一人流量太大了，只能感受到人感受不到城。
           </p>
-          <Image
-            src={binqilin1}
-            alt="山城冰淇淋"
-            sizes="100vw"
-            style={{
-              width: "360px",
-              height: "auto",
-            }}
-          />
+
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <Image
+              src={binqilin1}
+              alt="山城冰淇淋"
+              sizes="100vw"
+              style={{
+                width: "360",
+                height: "auto",
+              }}
+            />
+            <Image
+              src={naicha}
+              alt="七分甜"
+              sizes="100vw"
+              style={{
+                width: "360",
+                height: "auto",
+              }}
+            />
+          </div>
 
           <blockquote>
             <p>除了价格不美丽，其他很满意。</p>
@@ -153,7 +214,7 @@ export default function Page() {
             alt="李子坝穿楼"
             sizes="100vw"
             style={{
-              width: "360px",
+              width: "100%",
               height: "auto",
             }}
           />
@@ -171,7 +232,7 @@ export default function Page() {
             alt="洪崖洞"
             sizes="100vw"
             style={{
-              width: "360px",
+              width: "100%",
               height: "auto",
             }}
           />
