@@ -21,6 +21,7 @@ export default function Comments() {
       if (iframe) {
         iframe.onload = () => {
           setIsLoading(false);
+          console.log("load");
         };
       } else {
         console.log("iframe not found");

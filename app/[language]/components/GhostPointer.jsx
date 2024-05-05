@@ -5,7 +5,6 @@ import "@/styles/ghost-pointer.css";
 function GhostScript() {
   let mouse = { x: window.innerWidth / 2, y: 150, dir: "" };
   let clicked = false;
-  console.log("Loaded");
   const getMouse = (e) => {
     // 获取鼠标垂直坐标
     let mouseY = e.clientY || e.pageY || 0 || window.innerHeight / 2;

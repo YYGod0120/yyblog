@@ -8,6 +8,7 @@ import "./globals.css";
 import { dir } from "i18next";
 import { useTranslation } from "../i18n";
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const roboto = localFont({
   src: "../../public/fonts/LXGWWenKaiLite-Light.ttf",
   display: "swap",
@@ -50,6 +51,7 @@ export default async function RootLayout({
         <Header menus={defaultTags} language={language}></Header>
         <div className="w-[100vw] md:w-[95vw] lg:w-[900px]">{children}</div>
         <Footer></Footer>
+        <SpeedInsights />
       </body>
     </html>
   );

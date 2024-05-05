@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-
+import { useReportWebVitals } from "next/web-vitals";
 import { MyTypeWrite } from "./TypeWrite";
 import LanSwitcher from "./LanSwitcher";
 import { GhostPointer } from "./GhostPointer";
@@ -24,7 +24,9 @@ export default function Header({
   language: string;
 }) {
   const [tags, setTags] = useState<Tag[]>(menus);
-
+  useReportWebVitals((metric) => {
+    console.log(metric);
+  });
   const handleResize = () => {
     window.innerWidth > 1024
       ? setTags(menus)
