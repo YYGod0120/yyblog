@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "ybg compile && next dev ",
-    "d": "ybg compile && ybg deploy",
+    "dev": "next dev ",
+    "d": "ybg deploy",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
