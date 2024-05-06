@@ -11,7 +11,7 @@ Animating one layer of the background which is a tilted linear gradient with whi
 */
 .load:empty {
   margin: auto;
-  width: 500px;
+  width: 100%;
   height: 600px; /* change height to see repeat-y behavior */
 
   background-image: radial-gradient(

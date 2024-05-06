@@ -78,7 +78,7 @@ export default function Page() {
             alt="房间"
             sizes="100vw"
             style={{
-              width: "740",
+              width: "100%",
               height: "auto",
             }}
           />
@@ -90,7 +90,7 @@ export default function Page() {
               alt="五一广场"
               sizes="100vw"
               style={{
-                width: "740",
+                width: "100%",
                 height: "auto",
               }}
             />
@@ -104,7 +104,7 @@ export default function Page() {
               alt="靓虾二哥"
               sizes="100vw"
               style={{
-                width: "240",
+                width: "100%",
                 height: "auto",
               }}
             />
@@ -113,7 +113,7 @@ export default function Page() {
               alt="靓虾二哥"
               sizes="100vw"
               style={{
-                width: "240",
+                width: "100%",
                 height: "auto",
               }}
             />
@@ -122,7 +122,7 @@ export default function Page() {
               alt="靓虾二哥"
               sizes="100vw"
               style={{
-                width: "240",
+                width: "100%",
                 height: "auto",
               }}
             />
@@ -136,7 +136,7 @@ export default function Page() {
               alt="188的剪纸"
               sizes="100vw"
               style={{
-                width: "740",
+                width: "100%",
                 height: "auto",
               }}
             />
@@ -151,7 +151,7 @@ export default function Page() {
               alt="杜甫江阁"
               sizes="100vw"
               style={{
-                width: "350",
+                width: "100%",
                 height: "auto",
               }}
             />
@@ -160,7 +160,7 @@ export default function Page() {
               alt="杜甫江阁"
               sizes="100vw"
               style={{
-                width: "350",
+                width: "100%",
                 height: "auto",
               }}
             />
@@ -173,7 +173,7 @@ export default function Page() {
               alt="10点的早餐"
               sizes="100vw"
               style={{
-                width: "740",
+                width: "100%",
                 height: "auto",
               }}
             />
@@ -184,7 +184,7 @@ export default function Page() {
               alt="主打的就是丰富"
               sizes="100vw"
               style={{
-                width: "740",
+                width: "100%",
                 height: "auto",
               }}
             />
@@ -198,7 +198,7 @@ export default function Page() {
               alt="杨帆夜市"
               sizes="100vw"
               style={{
-                width: "140",
+                width: "100%",
                 height: "auto",
               }}
             />
@@ -207,7 +207,7 @@ export default function Page() {
               alt="杨帆夜市"
               sizes="100vw"
               style={{
-                width: "140",
+                width: "100%",
                 height: "auto",
               }}
             />
@@ -216,7 +216,7 @@ export default function Page() {
               alt="杨帆夜市"
               sizes="100vw"
               style={{
-                width: "140",
+                width: "100%",
                 height: "auto",
               }}
             />
@@ -225,7 +225,7 @@ export default function Page() {
               alt="杨帆夜市"
               sizes="100vw"
               style={{
-                width: "140",
+                width: "100%",
                 height: "auto",
               }}
             />
@@ -234,7 +234,7 @@ export default function Page() {
               alt="杨帆夜市"
               sizes="100vw"
               style={{
-                width: "140",
+                width: "100%",
                 height: "auto",
               }}
             />
@@ -251,7 +251,7 @@ export default function Page() {
               alt="一天四顿"
               sizes="100vw"
               style={{
-                width: "740",
+                width: "100%",
                 height: "auto",
               }}
             />
@@ -264,7 +264,7 @@ export default function Page() {
               alt="每个景区都少不了的纪念雪糕，不如武汉的好吃"
               sizes="100vw"
               style={{
-                width: "240",
+                width: "100%",
                 height: "auto",
               }}
             />
@@ -273,7 +273,7 @@ export default function Page() {
               alt="江边健身道"
               sizes="100vw"
               style={{
-                width: "240",
+                width: "100%",
                 height: "auto",
               }}
             />
@@ -282,7 +282,7 @@ export default function Page() {
               alt="青年毛"
               sizes="100vw"
               style={{
-                width: "240",
+                width: "100%",
                 height: "auto",
               }}
             />
@@ -297,7 +297,7 @@ export default function Page() {
             alt="加了红糖的糍粑罢了"
             sizes="100vw"
             style={{
-              width: "370",
+              width: "100%",
               height: "auto",
             }}
           />
@@ -310,7 +310,7 @@ export default function Page() {
             alt="最后一顿"
             sizes="100vw"
             style={{
-              width: "740",
+              width: "100%",
               height: "auto",
             }}
           />
