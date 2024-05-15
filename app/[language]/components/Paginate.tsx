@@ -13,7 +13,7 @@ export default function Paginate({ pages, nowPage, language }: Paginate) {
     <div className="mt-5 flex cursor-pointer flex-row items-center justify-center space-x-5 text-2xl ">
       {nowPage !== 0 ? (
         <Link
-          href={`/${language}/${nowPage - 1}`}
+          href={`/${language}/front/${nowPage - 1}`}
           className="text-default-font hover:font-bold hover:text-default-font"
         >
           {"＜"}
@@ -23,7 +23,7 @@ export default function Paginate({ pages, nowPage, language }: Paginate) {
         ? pagesArray.map((_, index) => {
             return (
               <Link
-                href={`/${language}/${index}`}
+                href={`/${language}/front/${index}`}
                 key={index}
                 className={
                   index !== nowPage
@@ -39,7 +39,7 @@ export default function Paginate({ pages, nowPage, language }: Paginate) {
       {nowPage !== pageItems - 1 ? (
         <Link
           className="text-default-font hover:font-bold hover:text-default-font"
-          href={`/${language}/${nowPage + 1}`}
+          href={`/${language}/front/${nowPage + 1}`}
         >
           {"＞"}
         </Link>

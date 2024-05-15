@@ -9,6 +9,10 @@ export function splitPathname(path: string): string {
       return "About";
     } else if (part.indexOf("categories") !== -1) {
       return "Categories";
+    } else if (part.indexOf("weekly") !== -1) {
+      return "Weekly";
+    } else if (part.indexOf("front") !== -1) {
+      return getDayOfWeek();
     } else if (part.indexOf("essay") !== -1) {
       return (
         DATA.find((i) => {
@@ -18,8 +22,8 @@ export function splitPathname(path: string): string {
         })?.title || "404"
       );
     } else {
-      return getDayOfWeek();
+      return "哎呀，似乎没有你想找的页面";
     }
   }
-  return "404";
+  return "ERROR";
 }

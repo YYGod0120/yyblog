@@ -4,9 +4,14 @@ const nextConfig = {
     return [
       {
         source: "/",
-        destination: "/0",
+        destination: "/front/0",
         permanent: true,
       },
+      // {
+      //   source: "/:anything((?!/).*)",
+      //   destination: "/front/0",
+      //   permanent: true,
+      // },
     ];
   },
 };

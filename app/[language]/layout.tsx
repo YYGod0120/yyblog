@@ -42,7 +42,7 @@ export default async function RootLayout({
     },
     {
       name: t("Weekly"),
-      href: `/${language}/0`,
+      href: `/${language}/weekly`,
     },
   ];
   return (

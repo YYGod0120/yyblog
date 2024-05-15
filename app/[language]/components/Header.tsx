@@ -9,13 +9,7 @@ export type Tag = {
   name: string;
   href: string;
 };
-function Banner({ language }: { language: string }) {
-  return (
-    <GhostPointer>
-      <MyTypeWrite language={language} />
-    </GhostPointer>
-  );
-}
+
 export default function Header({
   menus,
   language,
@@ -44,7 +38,7 @@ export default function Header({
     <div className="flex w-[100vw] flex-col items-center  bg-white ">
       <div className="flex  h-[45px]  w-[95vw] items-center text-2xl lg:w-[900px]">
         <Link
-          href={`/${language}/0`}
+          href={`/${language}/front/0`}
           className="w-[350px] text-start font-bold text-visit-font no-underline hover:text-visit-font"
         >
           YYGod0120
@@ -64,7 +58,6 @@ export default function Header({
           <LanSwitcher language={language}></LanSwitcher>
         </div>
       </div>
-      {Banner({ language: language })}
     </div>
   );
 }
