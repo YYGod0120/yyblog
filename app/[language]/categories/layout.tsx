@@ -18,7 +18,7 @@ export default function CategoriesLayout({
   return (
     <div className="flex flex-col items-center">
       <div className="w-[100vw] ">{Banner({ language: language })}</div>
-      <section>{children}</section>
+      <section className="w-full">{children}</section>
     </div>
   );
 }

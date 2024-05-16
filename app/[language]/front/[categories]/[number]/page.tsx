@@ -5,20 +5,26 @@ import "@/styles/error.css";
 import { useTranslation } from "@/app/i18n";
 
 export default async function Home({
-  params: { language, page },
+  params: { language, categories, number },
 }: {
-  params: { language: string; page: string };
+  params: Record<"language" | "number" | "categories", string>;
 }) {
   const { t } = await useTranslation(language, "translation");
-  const pageNumber = parseInt(page);
-  const noWeeklyData = DATA.filter((item) => {
-    return item.categories !== "Weekly";
-  }).slice(pageNumber * 5, (pageNumber + 1) * 5);
+  const pageNumber = parseInt(number);
+  const noWeeklyData =
+    categories !== "weekly"
+      ? DATA.filter((item) => {
+          return item.categories !== "Weekly";
+        })
+      : DATA.filter((item) => {
+          return item.categories === "Weekly";
+        });
+  const sliceData = noWeeklyData.slice(pageNumber * 5, (pageNumber + 1) * 5);
   return (
-    <div className="mt-8">
-      {noWeeklyData.length > 0 ? (
+    <div className="mt-8 ">
+      {sliceData.length > 0 ? (
         <div>
-          {noWeeklyData.map((file) => (
+          {sliceData.map((file) => (
             <div
               className=" mb-[30px]  cursor-pointer rounded bg-white text-start shadow-lg"
               key={file.id}

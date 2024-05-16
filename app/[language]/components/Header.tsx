@@ -38,7 +38,7 @@ export default function Header({
     <div className="flex w-[100vw] flex-col items-center  bg-white ">
       <div className="flex  h-[45px]  w-[95vw] items-center text-2xl lg:w-[900px]">
         <Link
-          href={`/${language}/front/0`}
+          href={`/${language}/front/noweek/0`}
           className="w-[350px] text-start font-bold text-visit-font no-underline hover:text-visit-font"
         >
           YYGod0120
