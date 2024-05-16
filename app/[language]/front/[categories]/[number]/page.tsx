@@ -43,6 +43,7 @@ export default async function Home({
             </div>
           ))}
           <Paginate
+            categories={categories}
             pages={noWeeklyData.length}
             nowPage={pageNumber}
             language={language}

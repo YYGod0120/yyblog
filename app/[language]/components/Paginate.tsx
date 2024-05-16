@@ -4,16 +4,22 @@ type Paginate = {
   pages: number;
   nowPage: number;
   language: string;
+  categories: string;
 };
-export default function Paginate({ pages, nowPage, language }: Paginate) {
-  const pageItems = Math.floor(pages / 5) + 1;
+export default function Paginate({
+  pages,
+  nowPage,
+  language,
+  categories,
+}: Paginate) {
+  const pageItems = Math.ceil(pages / 5);
 
   const pagesArray = Array.from({ length: pageItems }, (_, index) => index);
   return (
     <div className="mt-5 flex cursor-pointer flex-row items-center justify-center space-x-5 text-2xl ">
       {nowPage !== 0 ? (
         <Link
-          href={`/${language}/front/${nowPage - 1}`}
+          href={`/${language}/front/${categories}/${nowPage - 1}`}
           className="text-default-font hover:font-bold hover:text-default-font"
         >
           {"＜"}
@@ -23,7 +29,7 @@ export default function Paginate({ pages, nowPage, language }: Paginate) {
         ? pagesArray.map((_, index) => {
             return (
               <Link
-                href={`/${language}/front/${index}`}
+                href={`/${language}/front/${categories}/${index}`}
                 key={index}
                 className={
                   index !== nowPage
@@ -39,7 +45,7 @@ export default function Paginate({ pages, nowPage, language }: Paginate) {
       {nowPage !== pageItems - 1 ? (
         <Link
           className="text-default-font hover:font-bold hover:text-default-font"
-          href={`/${language}/front/${nowPage + 1}`}
+          href={`/${language}/front/${categories}/${nowPage + 1}`}
         >
           {"＞"}
         </Link>
