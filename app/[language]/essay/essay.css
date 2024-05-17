@@ -60,3 +60,10 @@ h6 {
 a:hover {
   color: #0c7ad8;
 }
+code {
+  background-color: #f5f5f5; /* 浅灰色背景 */
+  color: #6dd4fd; /* 深粉色字体 */
+  padding: 2px 4px; /* 内边距 */
+
+  font-size: 0.95em; /* 字体大小 */
+}
