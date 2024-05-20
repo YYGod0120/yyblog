@@ -1,13 +1,5 @@
-"use client";
-import { GhostPointer } from "../components/GhostPointer";
-import { MyTypeWrite } from "../components/TypeWrite";
-function Banner({ language }: { language: string }) {
-  return (
-    <GhostPointer>
-      <MyTypeWrite language={language} />
-    </GhostPointer>
-  );
-}
+import { Banner } from "../components/Banner";
+
 export default function AboutLayout({
   children,
   params: { language },
@@ -17,7 +9,11 @@ export default function AboutLayout({
 }) {
   return (
     <div className="flex flex-col items-center">
-      <div className="w-[100vw] ">{Banner({ language: language })}</div>
+      <div className="w-[100vw] ">
+        <div className="w-[100vw]">
+          <Banner language={language}></Banner>
+        </div>
+      </div>
       <section>{children}</section>
     </div>
   );

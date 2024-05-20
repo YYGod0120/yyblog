@@ -145,11 +145,7 @@ export function GhostPointer({ children }) {
             <feColorMatrix
               in="ghost-blur"
               mode="matrix"
-              values="
-                1 0 0 0 0
-                0 1 0 0 0
-                0 0 1 0 0
-                0 0 0 16 -7"
+              values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 16 -7"
               result="ghost-gooey"
             />
           </filter>

@@ -36,7 +36,7 @@ export default async function Home({
                 <div className="px-10 pb-8 pt-8  text-default-font hover:text-visit-font ">
                   <div className="mb-4 text-3xl font-bold">{t(file.title)}</div>
                   <div className=" text-lg font-bold">
-                    [{file.date}]&nbsp;&nbsp;{t(file.excerpt)}
+                    [{t(file.date)}]&nbsp;&nbsp;<span>{t(file.excerpt)}</span>
                   </div>
                 </div>
               </Link>
