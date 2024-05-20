@@ -10,9 +10,9 @@ import { useCookies } from "react-cookie";
 import resourcesToBackend from "i18next-resources-to-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { getOptions, languages, cookieName } from "./setting";
-
 const runsOnServerSide = typeof window === "undefined";
 
+//
 i18next
   .use(initReactI18next)
   .use(LanguageDetector)
@@ -35,6 +35,7 @@ export function useTranslation(lng, ns, options) {
   const [cookies, setCookie] = useCookies([cookieName]);
   const ret = useTranslationOrg(ns, options);
   const { i18n } = ret;
+
   if (runsOnServerSide && lng && i18n.resolvedLanguage !== lng) {
     i18n.changeLanguage(lng);
   } else {

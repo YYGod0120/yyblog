@@ -18,9 +18,9 @@ export default function Header({
   language: string;
 }) {
   const [tags, setTags] = useState<Tag[]>(menus);
-  useReportWebVitals((metric) => {
-    console.log(metric);
-  });
+  // useReportWebVitals((metric) => {
+  //   console.log(metric);
+  // });
   const handleResize = () => {
     window.innerWidth > 1024
       ? setTags(menus)
