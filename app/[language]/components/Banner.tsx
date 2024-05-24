@@ -2,8 +2,8 @@
 import { Suspense } from "react";
 import { GhostPointer } from "./GhostPointer";
 import { MyTypeWrite } from "./TypeWrite";
-import { ReactTyped } from "react-typed";
 import { DailyWord } from "@/utils/getDailyWord";
+import ErrorBoundary from "./ErrorBoundary";
 
 export function Banner({
   wordsFetch,
@@ -13,7 +13,7 @@ export function Banner({
   language: string;
 }) {
   return (
-    <Suspense
+    <ErrorBoundary
       fallback={
         <GhostPointer>
           <span
@@ -25,14 +25,32 @@ export function Banner({
               color: "white",
             }}
           >
-            Loading...
+            ⚠️Something went wrong
           </span>
         </GhostPointer>
       }
     >
-      <GhostPointer>
-        <MyTypeWrite language={language} wordsFetch={wordsFetch} />
-      </GhostPointer>
-    </Suspense>
+      <Suspense
+        fallback={
+          <GhostPointer>
+            <span
+              style={{
+                display: "flex",
+                lineHeight: "250px",
+                fontSize: "4rem",
+                justifyContent: "center",
+                color: "white",
+              }}
+            >
+              Loading...
+            </span>
+          </GhostPointer>
+        }
+      >
+        <GhostPointer>
+          <MyTypeWrite language={language} wordsFetch={wordsFetch} />
+        </GhostPointer>
+      </Suspense>
+    </ErrorBoundary>
   );
 }
