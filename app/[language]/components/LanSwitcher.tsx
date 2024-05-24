@@ -6,9 +6,9 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function LanSwitcher({ language }: { language: string }) {
-  const pathname = usePathname();
-  const { t } = useTranslation(language, "translation");
-  const newURL = pathname.replace(`${language}`, `${t(language)}`);
+  var pathname = usePathname();
+  var { t } = useTranslation(language, "translation");
+  var newURL = pathname.replace(`${language}`, `${t(language)}`);
 
   return (
     <div className=" hidden lg:block">

@@ -12,6 +12,7 @@
   "dependencies": {
     "@vercel/speed-insights": "^1.0.10",
     "accept-language": "^3.0.18",
+    "axios": "^1.7.2",
     "babel-plugin-react-compiler": "0.0.0-experimental-592953e-20240517",
     "dayjs": "^1.11.10",
     "dotenv": "^16.3.2",
