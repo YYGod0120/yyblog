@@ -8,12 +8,12 @@ export default function CategoriesLayout({
   children: React.ReactNode;
   params: { language: string };
 }) {
-  const wordsFetch = getDailyWord();
+  // const wordsFetch = getDailyWord();
   return (
     <div className="flex flex-col items-center">
       <div className="w-[100vw] ">
         <div className="w-[100vw]">
-          <Banner language={language} wordsFetch={wordsFetch}></Banner>
+          <Banner language={language}></Banner>
         </div>
       </div>
       <section className="w-full">{children}</section>

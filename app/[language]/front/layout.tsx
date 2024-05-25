@@ -8,11 +8,11 @@ export default async function FrontLayout({
   children: React.ReactNode;
   params: { language: string };
 }) {
-  const wordsFetch = getDailyWord();
+  // const wordsFetch = getDailyWord();
   return (
     <div className="flex flex-col items-center">
       <div className="w-[100vw]">
-        <Banner language={language} wordsFetch={wordsFetch}></Banner>
+        <Banner language={language}></Banner>
       </div>
       <section className="w-full">{children}</section>
     </div>

@@ -1,10 +1,11 @@
+"use client";
 import { usePathname } from "next/navigation";
 import { ReactTyped } from "react-typed";
 import { splitPathname } from "@/utils/dealPathname";
-import { useTranslation } from "@/app/i18n/";
-export async function MyTypeWrite({ language }: { language: string }) {
+import { useTranslation } from "@/app/i18n/client";
+export function MyTypeWrite({ language }: { language: string }) {
   const pathname = usePathname();
-  const { t } = await useTranslation(language, "translation");
+  const { t } = useTranslation(language, "translation");
   const title = splitPathname(pathname);
 
   return (

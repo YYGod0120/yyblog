@@ -5,13 +5,7 @@ import { MyTypeWrite } from "./TypeWrite";
 import { DailyWord } from "@/utils/getDailyWord";
 import ErrorBoundary from "./ErrorBoundary";
 
-export function Banner({
-  wordsFetch,
-  language,
-}: {
-  wordsFetch: Promise<DailyWord>;
-  language: string;
-}) {
+export function Banner({ language }: { language: string }) {
   return (
     <ErrorBoundary
       fallback={
@@ -48,7 +42,7 @@ export function Banner({
         }
       >
         <GhostPointer>
-          <MyTypeWrite language={language} wordsFetch={wordsFetch} />
+          <MyTypeWrite language={language} />
         </GhostPointer>
       </Suspense>
     </ErrorBoundary>
