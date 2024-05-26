@@ -12,7 +12,7 @@ export default function EssayLayout({
   return (
     <div className="flex flex-col items-center">
       <div className="w-[100vw]">
-        <Banner language={language} wordsFetch={wordsFetch}></Banner>
+        <Banner language={language} isGetDailyWord={false}></Banner>
       </div>
       <section>{children}</section>
     </div>

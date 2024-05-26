@@ -16,7 +16,7 @@ export default function AboutLayout({
           <Banner language={language} isGetDailyWord={false}></Banner>
         </div>
       </div>
-      <section>{children}</section>
+      <section className="w-full">{children}</section>
     </div>
   );
 }
