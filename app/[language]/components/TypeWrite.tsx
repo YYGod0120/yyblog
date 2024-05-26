@@ -1,21 +1,31 @@
 "use client";
-// import { usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { ReactTyped } from "react-typed";
-import { Suspense, use } from "react";
+import { getDailyWord } from "@/utils/getDailyWord";
+import { Suspense, use, useState } from "react";
 import { DailyWord } from "@/utils/getDailyWord";
+import { splitPathname } from "@/utils/dealPathname";
+import { useTranslation } from "@/app/i18n/client";
 export function MyTypeWrite({
   language,
+  isGetDailyWord,
   wordsFetch,
 }: {
   language: string;
-  wordsFetch: Promise<DailyWord>;
+  isGetDailyWord: boolean;
+  wordsFetch?: Promise<DailyWord>;
 }) {
-  const words = use(wordsFetch);
-  console.log(wordsFetch, words);
-  const word = language === "zh-CN" ? words.note : words.content;
+  let word;
+  const pathName = usePathname();
+  const title = splitPathname(pathName);
+  const { t } = useTranslation(language, "translations");
+  if (isGetDailyWord && wordsFetch) {
+    const words = use(wordsFetch);
+    word = language === "zh-CN" ? words.note : words.content;
+  }
   return (
     <ReactTyped
-      strings={[word]}
+      strings={!word ? [t(title)] : [word]}
       typeSpeed={50}
       style={{
         display: "flex",

@@ -13,7 +13,7 @@ export default function AboutLayout({
     <div className="flex flex-col items-center">
       <div className="w-[100vw] ">
         <div className="w-[100vw]">
-          <Banner language={language} wordsFetch={wordsFetch}></Banner>
+          <Banner language={language} isGetDailyWord={false}></Banner>
         </div>
       </div>
       <section>{children}</section>

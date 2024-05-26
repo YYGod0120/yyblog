@@ -12,7 +12,11 @@ export default async function FrontLayout({
   return (
     <div className="flex flex-col items-center">
       <div className="w-[100vw]">
-        <Banner language={language} wordsFetch={wordsFetch}></Banner>
+        <Banner
+          language={language}
+          isGetDailyWord={true}
+          wordsFetch={wordsFetch}
+        ></Banner>
       </div>
       <section className="w-full">{children}</section>
     </div>

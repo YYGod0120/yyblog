@@ -6,11 +6,13 @@ import { DailyWord } from "@/utils/getDailyWord";
 import ErrorBoundary from "./ErrorBoundary";
 
 export function Banner({
-  wordsFetch,
   language,
+  isGetDailyWord,
+  wordsFetch,
 }: {
-  wordsFetch: Promise<DailyWord>;
+  wordsFetch?: Promise<DailyWord>;
   language: string;
+  isGetDailyWord: boolean;
 }) {
   return (
     <ErrorBoundary
@@ -48,7 +50,11 @@ export function Banner({
         }
       >
         <GhostPointer>
-          <MyTypeWrite language={language} wordsFetch={wordsFetch} />
+          <MyTypeWrite
+            language={language}
+            wordsFetch={wordsFetch}
+            isGetDailyWord={isGetDailyWord}
+          />
         </GhostPointer>
       </Suspense>
     </ErrorBoundary>
