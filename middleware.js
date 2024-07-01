@@ -30,6 +30,7 @@ export function middleware(req) {
   // 记住用户默认使用的语言
   if (req.headers.has("referer")) {
     const refererUrl = new URL(req.headers.get("referer"));
+    console.log(refererUrl);
     const lngInReferer = languages.find((l) =>
       refererUrl.pathname.startsWith(`/${l}`),
     );

@@ -24,6 +24,3 @@ a {
   color: inherit; /* 继承父元素的文本颜色 */
   cursor: pointer; /* 修改鼠标指针样式，可选 */
 }
-::-webkit-scrollbar {
-  display: none;
-}
