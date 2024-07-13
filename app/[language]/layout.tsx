@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import { Metadata } from "next";
-
+import { Analytics } from "@vercel/analytics/react";
 import Header, { Tag } from "@/app/[language]/components/Header";
 import Footer from "@/app/[language]/components/Footer";
 import { languages } from "@/app/i18n/setting";
@@ -51,6 +51,7 @@ export default async function RootLayout({
         <Header menus={defaultTags} language={language}></Header>
         <div className="w-[100vw] md:w-[95vw] lg:w-[900px]">{children}</div>
         <Footer></Footer>
+        <Analytics />
         <SpeedInsights />
       </body>
     </html>
