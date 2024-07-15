@@ -28,8 +28,8 @@ Compared to common blog frameworks (such as `hexo`, `wordpress`, etc.), which ar
 # Roadmap
 
 - ~~Responsive layout~~
-- Comment system
-- Traffic monitoring
+- ~~Comment system~~
+- ~~Traffic monitoring~~
 - More interesting features...
 
 # How to Use
