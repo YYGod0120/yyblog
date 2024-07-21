@@ -18,6 +18,8 @@ body {
   background-color: #d4d5dd;
   margin: 0;
   padding-bottom: 10px;
+  width: 100vw;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none; /* 去除下划线 */
