@@ -44,13 +44,7 @@ excerpt: 这里是每周总结，记录每一周的趣事，技术分享以及�
 
 上周末全拿来吃吃吃了：
 
-<img src="/imgs/YBG-第十五期/吃1.png" alt="吃吃吃" />
-
-<img src="/imgs/YBG-第十五期/吃2.png" alt="吃吃吃" />
-
-<img src="/imgs/YBG-第十五期/吃3.png" alt="吃吃吃" />
-
-<img src="/imgs/YBG-第十五期/吃4.png" alt="吃吃吃" />
+<img src="/imgs/YBG-第十五期/吃.png" alt="吃吃吃" />
 
 上周github新增了好几个follower，都是外国人，似乎外国人都很喜欢follow一堆人？
 
