@@ -1,0 +1,17 @@
+{
+  "0": "There are flowers in spring, moon in autumn, cool breeze in summer, and snow in winter. If there is nothing else to worry about, it is a good season in the world.",
+  "1": "Technology/Study",
+  "2": "remark",
+  "3": "Unlike the marked version used by YBG cli for parsing MD files, remark supports more plugins for MD parsing. More importantly, remark provides AST parsing of MD files at the lower level, creating a larger upper level operating space for us to analyze MD files.",
+  "4": "About AST",
+  "5": "LibreTranslate",
+  "6": "Free and open-source machine translation API, fully self hosted. Unlike other APIs, it does not rely on proprietary providers such as Google or Azure to perform translation. On the contrary, its translation engine is supported by the open-source Argos Translate library.",
+  "7": "Syntax Highlighting in Hand-Coded Websites",
+  "8": "Unlike the syntax highlighting libraries in Hightlight.exe or Prism.js, this syntax highlighting is based on fonts rather than modifying DOM using JS.",
+  "9": "Game",
+  "10": "Black-Myth: Wukong has exploded on major social media platforms, with almost all live streaming platforms and major anchors playing it. But it seems that there are a small number of \"haters\" and foreign fans who sing bad songs without reason. It can only be said that a big tree attracts wind. As the first domestically produced 3A masterpiece, it deserves strong support. Even my family has heard of it and wants to play, but unfortunately the configuration is not enough.",
+  "11": "Raging Loop, as an old game, fully combines the history of Japanese mythology with the unknown Werewolf at that time, and is called a masterpiece.",
+  "12": "Work/Life",
+  "13": "Working non-stop, constantly typing code.",
+  "14": "This week, the main focus is on refactoring the underlying parsing framework of the scaffolding, partly because it is estimated that more work will need to be done on the basis of parsing the article (MD), such as translation, text modification, and so on. On the other hand, I feel that the previous marked parsing library had too low scalability, was too old, had unfriendly usage, and was even a bit foolish. So we decided to switch to remark, support more plugins, and decompose AST for parsing. So first use remark for translation work, and then replace step by step."
+}
