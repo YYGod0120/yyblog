@@ -102,8 +102,7 @@ export default async function Page({
             language="shell"
             style={oneLight}
             showLineNumbers
-          >{`npm install next\@canary babel\-plugin\-react\-compiler
-`}</SyntaxHighlighter>
+          >{`npm install next\@canary babel\-plugin\-react\-compiler`}</SyntaxHighlighter>
           <p>
             {t("then")}
             <code>next.config.js</code>:

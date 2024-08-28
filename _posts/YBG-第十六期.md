@@ -21,7 +21,7 @@ excerpt: 这里是每周总结，记录每一周的趣事，技术分享以及�
 
    [《低代码引擎搭建协议规范》](https://lowcode-engine.cn/site/docs/specs/lowcode-spec)
 
-   其实感觉低代码就是画板+组件库
+   其实感觉低代码就是画板and组件库
 
 ## Life
 
