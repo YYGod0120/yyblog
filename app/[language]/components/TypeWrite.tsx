@@ -33,6 +33,7 @@ export function MyTypeWrite({
         fontSize: "4rem",
         justifyContent: "center",
         color: "white",
+        userSelect: "none",
       }}
     />
   );

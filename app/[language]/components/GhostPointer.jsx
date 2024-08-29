@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import "@/styles/ghost-pointer.css";
+import { EventEmitter } from "stream";
 
 function GhostScript() {
   let mouse = { x: window.innerWidth / 2, y: 150, dir: "" };
@@ -24,7 +25,6 @@ function GhostScript() {
     window.addEventListener(e, getMouse);
   });
   window.addEventListener("mousedown", (e) => {
-    e.preventDefault();
     clicked = true;
   });
   window.addEventListener("mouseup", () => {
