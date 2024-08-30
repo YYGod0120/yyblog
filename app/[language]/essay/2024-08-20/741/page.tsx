@@ -13,9 +13,6 @@ export default async function Page({
 }: {
   params: { language: string };
 }) {
-  const Comment = dynamic(() => import("@/app/[language]/components/Comment"), {
-    ssr: false,
-  });
   const { t } = await useTranslation(language, "essay-YBG-第十七期");
   return (
     <div>
@@ -139,9 +136,6 @@ export default async function Page({
             </li>
           </ul>
         </div>
-      </div>
-      <div className="mt-12 bg-white px-6 py-8">
-        <Comment />
       </div>
     </div>
   );

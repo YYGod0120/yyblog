@@ -19,9 +19,6 @@ export default async function Page({
   params: { language: string };
 }) {
   const { t } = await useTranslation(language, "essay-React19");
-  const Comment = dynamic(() => import("@/app/[language]/components/Comment"), {
-    ssr: false,
-  });
   return (
     <div>
       <div className="mt-8 flex flex-col items-start rounded-sm bg-white text-lg shadow-lg">
@@ -329,9 +326,6 @@ export function MyTypeWrite\(\{
             </a>
           </p>
         </div>
-      </div>
-      <div className="mt-12 bg-white px-6 py-8">
-        <Comment />
       </div>
     </div>
   );

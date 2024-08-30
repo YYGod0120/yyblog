@@ -1,54 +1,64 @@
-
-  import Image from "next/image";
+import Image from "next/image";
 import dynamic from "next/dynamic";
-  
-  // @ts-ignore
+
+// @ts-ignore
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 // @ts-ignore
 import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
 import "@/app/[language]/essay/essay.css";
 export default function Page() {
-  const Comment = dynamic(() => import("@/app/[language]/components/Comment"), {
-    ssr: false,
-  });
   return (
     <div>
-    <div className="mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">
-    <span className="text-4xl text-left lg:px-20 md:px-[2.5vw] px-4 pt-12 text-visit-font font-bold">
-      交通局
-    </span>
-    <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
-      Categories: Project &nbsp; &nbsp; 2023-10-24
-    </span>
-    <div className="flex text-start break-words flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
-      <h1>丰都县交通局</h1>
-<blockquote>
-<p>记得下次好好评审项目以及拉黑胡*</p>
-</blockquote>
-<p><a href="http://47.108.56.37:8080/">项目地址</a>
-市民端：账 123456 密 123456</p>
-<h2>项目概述</h2>
-<p>一个基本的后台管理，但是内容极其恶心，既要打车又要货拉拉还要 12306 买票</p>
-<p>最恶心的就是没有正规的 12306，都是自己爬的接口用。<del>不会被抓吧</del></p>
-<h2>技术栈</h2>
-<ol>
-<li>React + Vite + arcodesign</li>
-<li>tailwind</li>
-<li>recoil</li>
-<li>moment</li>
-</ol>
-<p>属于是只用上了基本的东西</p>
-<h2>负责模块</h2>
-<ol>
-<li>布局以及侧边栏</li>
-<li>信息栏的用户端以及管理端</li>
-<li>权限管理端</li>
-</ol>
-<h3>侧边栏</h3>
-<p>这个项目采用的是文件路由的方式，类似于 Next.js 的文件路由
-所以通过将文件也就是路由扁平化，递归判断是否为父文件还是子文件来进行侧边栏渲染
-通过权限判断一些选项是否渲染，从而达到隐藏的作用</p>
-<SyntaxHighlighter language="js" style={oneLight} showLineNumbers>{ `\/\/\文\件\路\由\实\现
+      <div className="mt-8 flex flex-col items-start rounded-sm bg-white text-lg shadow-lg">
+        <span className="px-4 pt-12 text-left text-4xl font-bold text-visit-font md:px-[2.5vw] lg:px-20">
+          交通局
+        </span>
+        <span className="mb-5 px-4 pt-5 text-xl text-[#86909C] md:px-[2.5vw] lg:px-20">
+          Categories: Project &nbsp; &nbsp; 2023-10-24
+        </span>
+        <div className="flex w-[95vw] flex-col break-words px-[2.5vw] pb-12 text-start md:w-[90vw] md:px-[2.5vw] lg:w-[740px] lg:px-20">
+          <h1>丰都县交通局</h1>
+          <blockquote>
+            <p>记得下次好好评审项目以及拉黑胡*</p>
+          </blockquote>
+          <p>
+            <a href="http://47.108.56.37:8080/">项目地址</a>
+            市民端：账 123456 密 123456
+          </p>
+          <h2>项目概述</h2>
+          <p>
+            一个基本的后台管理，但是内容极其恶心，既要打车又要货拉拉还要 12306
+            买票
+          </p>
+          <p>
+            最恶心的就是没有正规的 12306，都是自己爬的接口用。
+            <del>不会被抓吧</del>
+          </p>
+          <h2>技术栈</h2>
+          <ol>
+            <li>React + Vite + arcodesign</li>
+            <li>tailwind</li>
+            <li>recoil</li>
+            <li>moment</li>
+          </ol>
+          <p>属于是只用上了基本的东西</p>
+          <h2>负责模块</h2>
+          <ol>
+            <li>布局以及侧边栏</li>
+            <li>信息栏的用户端以及管理端</li>
+            <li>权限管理端</li>
+          </ol>
+          <h3>侧边栏</h3>
+          <p>
+            这个项目采用的是文件路由的方式，类似于 Next.js 的文件路由
+            所以通过将文件也就是路由扁平化，递归判断是否为父文件还是子文件来进行侧边栏渲染
+            通过权限判断一些选项是否渲染，从而达到隐藏的作用
+          </p>
+          <SyntaxHighlighter
+            language="js"
+            style={oneLight}
+            showLineNumbers
+          >{`\/\/\文\件\路\由\实\现
 const layout\: Record\<string\, FC\<any\> \| null\> \= \{
   default\: \(props\) \=\> \(
     \<Layout\>
@@ -119,8 +129,12 @@ defaultRoutes\.forEach\(\(v1\) \=\> \{
 \}\)\;
 export const routes\: RouteObject\[\] \= \[\.\.\.defaultRoutes\]\;
 export const router \= createHashRouter\(routes\)\;
-` }</SyntaxHighlighter>
-<SyntaxHighlighter language="js" style={oneLight} showLineNumbers>{ `\/\/\/\侧\边\栏\渲\染
+`}</SyntaxHighlighter>
+          <SyntaxHighlighter
+            language="js"
+            style={oneLight}
+            showLineNumbers
+          >{`\/\/\/\侧\边\栏\渲\染
 export default function Side\(\) \{
   const \[selectKey\, setSelectKey\] \= useState\<string\[\]\>\(\[\]\)
   function renderMenu\(
@@ -190,20 +204,33 @@ export default function Side\(\) \{
     \<\/div\>
   \)\;
 \}
-` }</SyntaxHighlighter>
-<p>优点：</p>
-<ol>
-<li>方便，不需要编写路由表，只需要创建文件就会自动生成对应路由。</li>
-<li>后期渲染侧边栏的 menu 文件相比路由表配置起来也简单</li>
-</ol>
-<p>缺点：</p>
-<ol>
-<li>文件一创建就会生成路由，先前通过文件渲染侧边栏就会导致不想渲染的子路由也出现在侧边栏。
-解决方案是通过 menu 配置进行筛选渲染，但是如此一来就和配置路由表大差不差。</li>
-</ol>
-<p>总结就是：想使用文件路由，可以直接上手<code>Next.js</code>，能方便很多。加上设置侧边栏也是通过<code>menu.ts</code>来进行配置,倒不如直接使用路由表来渲染</p>
-<p>例子：</p>
-<SyntaxHighlighter language="ts" style={oneLight} showLineNumbers>{ `\/\/\路\由\类\型
+`}</SyntaxHighlighter>
+          <p>优点：</p>
+          <ol>
+            <li>
+              方便，不需要编写路由表，只需要创建文件就会自动生成对应路由。
+            </li>
+            <li>后期渲染侧边栏的 menu 文件相比路由表配置起来也简单</li>
+          </ol>
+          <p>缺点：</p>
+          <ol>
+            <li>
+              文件一创建就会生成路由，先前通过文件渲染侧边栏就会导致不想渲染的子路由也出现在侧边栏。
+              解决方案是通过 menu
+              配置进行筛选渲染，但是如此一来就和配置路由表大差不差。
+            </li>
+          </ol>
+          <p>
+            总结就是：想使用文件路由，可以直接上手<code>Next.js</code>
+            ，能方便很多。加上设置侧边栏也是通过<code>menu.ts</code>
+            来进行配置,倒不如直接使用路由表来渲染
+          </p>
+          <p>例子：</p>
+          <SyntaxHighlighter
+            language="ts"
+            style={oneLight}
+            showLineNumbers
+          >{`\/\/\路\由\类\型
 type Auth \= \{
   resource\: string \| RegExp\;
   actions\?\: string\[\]\;
@@ -224,8 +251,12 @@ export type IRoute \= AuthParams \& \{
     IconProps \& React\.RefAttributes\<unknown\>
   \>\;
 \}\;
-` }</SyntaxHighlighter>
-<SyntaxHighlighter language="tsx" style={oneLight} showLineNumbers>{ `export const generatePermission \= \(level\: string\) \=\> \{
+`}</SyntaxHighlighter>
+          <SyntaxHighlighter
+            language="tsx"
+            style={oneLight}
+            showLineNumbers
+          >{`export const generatePermission \= \(level\: string\) \=\> \{
   const actions \= level \=\=\= "3" \? \[\] \: \["\*"\]\;
   const result \= \{\}\;
   routes\.forEach\(\(item\) \=\> \{
@@ -284,8 +315,12 @@ const useRoute \= \(userPermission\)\: \[IRoute\[\]\, string\] \=\> \{
 \}\;
 
 export default useRoute\;
-` }</SyntaxHighlighter>
-<SyntaxHighlighter language="tsx" style={oneLight} showLineNumbers>{ `\/\/\渲\染
+`}</SyntaxHighlighter>
+          <SyntaxHighlighter
+            language="tsx"
+            style={oneLight}
+            showLineNumbers
+          >{`\/\/\渲\染
 function renderRoutes\(locale\: \{ \[x\: string\]\: any \}\) \{
   routeMap\.current\.clear\(\)\;
   return function travel\(_routes\: IRoute\[\]\, level\: number\, parentNode \= \[\]\) \{
@@ -330,23 +365,26 @@ function renderRoutes\(locale\: \{ \[x\: string\]\: any \}\) \{
     \}\)\;
   \}\;
 \}
-` }</SyntaxHighlighter>
-<p>通过配置路由，可以分权配置，细分到页面和操作，适用于大型的后台管理</p>
-<p>直接通过文件配置路由，适用于简单的后台，不需要配置路由表的情况下，用起来方便
-当然你可以自己选择 Next.js</p>
-<p><del>鄙人浅显的见解，大佬轻喷</del></p>
-<h3>剩下两个模块</h3>
-<p>简单的表格组件使用而已，没什么亮点</p>
-<h2>收获</h2>
-<p>对这种路由布局理解提高了一点
-帮他们写 12306 的时候，学会了抓包工具 Fiddler Classic。<del>说不定哪天能写一个有趣的东西</del></p>
-
-    </div>
-    
-  </div>
-  <div className="mt-12 py-8 bg-white px-6">
-  <Comment />
-</div>
+`}</SyntaxHighlighter>
+          <p>
+            通过配置路由，可以分权配置，细分到页面和操作，适用于大型的后台管理
+          </p>
+          <p>
+            直接通过文件配置路由，适用于简单的后台，不需要配置路由表的情况下，用起来方便
+            当然你可以自己选择 Next.js
+          </p>
+          <p>
+            <del>鄙人浅显的见解，大佬轻喷</del>
+          </p>
+          <h3>剩下两个模块</h3>
+          <p>简单的表格组件使用而已，没什么亮点</p>
+          <h2>收获</h2>
+          <p>
+            对这种路由布局理解提高了一点 帮他们写 12306 的时候，学会了抓包工具
+            Fiddler Classic。<del>说不定哪天能写一个有趣的东西</del>
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

@@ -17,9 +17,6 @@ export default async function Page({
 }: {
   params: { language: string };
 }) {
-  const Comment = dynamic(() => import("@/app/[language]/components/Comment"), {
-    ssr: false,
-  });
   const { t } = await useTranslation(language, "essay-MYCHAT");
   return (
     <div>
@@ -322,9 +319,6 @@ renderAIRes\.current \+\= decoded\;
             )}
           </p>
         </div>
-      </div>
-      <div className="mt-12 bg-white px-6 py-8">
-        <Comment />
       </div>
     </div>
   );

@@ -7,9 +7,6 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
 import "@/app/[language]/essay/essay.css";
 export default function Page() {
-  const Comment = dynamic(() => import("@/app/[language]/components/Comment"), {
-    ssr: false,
-  });
   return (
     <div>
       <div className="mt-8 flex flex-col items-start rounded-sm bg-white text-lg shadow-lg">
@@ -115,9 +112,6 @@ export default function Page() {
             <li>本来打算使用百度翻译翻译文章，但是对长文章的翻译不友好。</li>
           </ul>
         </div>
-      </div>
-      <div className="mt-12 bg-white px-6 py-8">
-        <Comment />
       </div>
     </div>
   );

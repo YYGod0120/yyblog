@@ -12,9 +12,6 @@ export default async function Page({
 }: {
   params: { language: string };
 }) {
-  const Comment = dynamic(() => import("@/app/[language]/components/Comment"), {
-    ssr: false,
-  });
   const { t } = await useTranslation(language, "essay-XHRvsFetch");
   return (
     <div>
@@ -297,9 +294,6 @@ const reader \= response\.body\.getReader\(\)\;
             <li>{t("74")}</li>
           </ul>
         </div>
-      </div>
-      <div className="mt-12 bg-white px-6 py-8">
-        <Comment />
       </div>
     </div>
   );

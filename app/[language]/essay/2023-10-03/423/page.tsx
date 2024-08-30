@@ -50,9 +50,6 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
 import "@/app/[language]/essay/essay.css";
 export default function Page() {
-  const Comment = dynamic(() => import("@/app/[language]/components/Comment"), {
-    ssr: false,
-  });
   return (
     <div>
       <div className="mt-8 flex flex-col items-start rounded-sm bg-white text-lg shadow-lg">
@@ -321,9 +318,6 @@ export default function Page() {
             靠地铁近，不用每次都打车也省下了一笔交通费
           </p>
         </div>
-      </div>
-      <div className="mt-12 bg-white px-6 py-8">
-        <Comment />
       </div>
     </div>
   );

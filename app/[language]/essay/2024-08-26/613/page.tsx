@@ -76,9 +76,6 @@ export default async function Page({
           <p>{t("14")}</p>
         </div>
       </div>
-      <div className="mt-12 bg-white px-6 py-8">
-        <Comment />
-      </div>
     </div>
   );
 }
