@@ -15,7 +15,7 @@ export default function GS({ language }: { language: string }) {
       emitMetadata="0"
       inputPosition="bottom"
       theme="preferred_color_scheme"
-      lang={language === "zh" ? "zh-CN" : "en"}
+      lang={language === "zh-CN" ? "zh-CN" : "en"}
       loading="lazy"
     />
   );
