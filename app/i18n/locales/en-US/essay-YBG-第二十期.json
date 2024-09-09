@@ -1,0 +1,18 @@
+{
+  "0": "So far's new dormitory, new campus",
+  "1": "Technology/Study",
+  "2": "All in One hacking tool",
+  "3": "This All in One hacking tool includes anonymity, information collection, SQL injection, reverse engineering, and other toolkit capabilities. Students interested in security can study and research it.",
+  "4": "Reflection on Five Years of Work",
+  "5": "Workers can take a look.",
+  "6": "A method to continuously improve oneself:",
+  "7": "Regularly summarize from the perspective of your supervisor and superiors",
+  "8": "Weekly note: What was done this week, why were these goals not achieved, and what will be done next week?",
+  "9": "Quarterly Summary: Review Weekly, why haven't these quarterly goals been achieved?",
+  "10": "Annual Summary: Reflecting on one's own motivation, what should be done?",
+  "11": "Unsplash Wanderer",
+  "12": "Unsplash, a commonly used landscape image website, has released a chorme plugin that can display a beautiful landscape image every tap page",
+  "13": "Life",
+  "14": "The summer internship has expired, and now we need to embrace our academic life. I will probably write a blog post later to elaborate on Meituan's 2-month internship. Unfortunately, I still resigned in the end 😣😣",
+  "15": "Just returned to school in a new dormitory, busy with work and just finished an internship, took a few days off and didn't code much. The main focus is on modifying the bottom layer of the rrfe compilation interface file, removing regularization and replacing it with AST. The trouble lies in the fact that the plugins in the unified use are very complicated and the idea of parsing AST is also very tedious. I estimate it will take a few more days."
+}
