@@ -79,7 +79,7 @@ export default function Page() {
               </p>
             </li>
           </ol>
-          <h2>Funnay</h2>
+          <h2>Funny</h2>
           <ol>
             <li>
               <p>
