@@ -1,5 +1,9 @@
 import "./TimeLine.css";
-export function TimeLine() {
+import { useTranslation } from "@/app/i18n";
+export async function TimeLine({ language }: { language: string }) {
+  console.log(language);
+
+  const { t } = await useTranslation(language, "timeline");
   return (
     <div className="timeline">
       <div className="events">
@@ -13,9 +17,9 @@ export function TimeLine() {
             <circle cx="6" cy="6" r="6"></circle>
           </svg>
           <div className="content">
-            <time>2003</time>
+            <time>{t("1")}</time>
             <div className="text">
-              <p>我出生在福建省</p>
+              <p>{t("2")}</p>
             </div>
           </div>
         </div>
@@ -29,9 +33,9 @@ export function TimeLine() {
             <circle cx="6" cy="6" r="6"></circle>
           </svg>
           <div className="content">
-            <time>2022</time>
+            <time>{t("3")}</time>
             <div className="text">
-              <p>我考入重庆邮电大学</p>
+              <p>{t("4")}</p>
             </div>
           </div>
         </div>
@@ -46,9 +50,9 @@ export function TimeLine() {
             <circle cx="6" cy="6" r="6"></circle>
           </svg>
           <div className="content">
-            <time>2024</time>
+            <time>{t("5")}</time>
             <div className="text">
-              <p>我在广州小红书上班</p>
+              <p>{t("6")}</p>
             </div>
           </div>
         </div>
