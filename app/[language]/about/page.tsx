@@ -38,7 +38,7 @@ export default async function Page({
           <li className="mb-5">🌱{t("line4")}</li>
         </div>
       </div>
-      <TimeLine />
+      <TimeLine language={language} />
     </div>
   );
 }
