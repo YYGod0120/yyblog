@@ -1,0 +1,18 @@
+{
+  "0": "Long time no see.",
+  "1": "It's been a while since I last wrote an article, and I gradually stopped updating after coming from Guangzhou. I used to have the motivation to write an article after work, but I happened to encounter some blog problems. I didn't have much time to edit my blog, which caused my writing plan to be put on hold.",
+  "2": "This pen was broken for several months, during the days without updates, life continued. Just an unrecorded life, it seems to be getting faster and less enjoyable. I don't know what I've done or what I'm going to do, it seems like I'm living aimlessly.",
+  "3": "Just a few days ago, I saw Tencent Cloud send me a message saying that the domain name is about to expire, and then I remembered that the blog website, which costs nearly 100 yuan this year, seems to have not been updated for a long time. Actually, I had planned to modify this project during the Chinese New Year period and update it for him. But the holiday was so short that it ended before I could even pay attention.",
+  "4": "But it's okay, I'm back now with a brand new self. Actually, writing some articles doesn't require good writing skills, nor does it need to be overly detailed and exciting",
+  "5":"It's not a technical solution",
+  "6": "Where did I go",
+  "7": "During these three to four months of hiatus, I went back to school to prepare for the final exams and spent a few days with the princess in Guangzhou (actually it was only a few days, I went home during the Spring Festival travel rush, and it seemed like I only played for two days, spending the rest of the time at home). The rest of the time was spent working overtime and typing codes. From emulator to IDE to debugger, now even writing monitoring plugins and sharing single test articles. I have to sigh at how difficult the architecture is, with bugs fixed to the point of spitting blood every day 😭😭😭， By the way, I witnessed foreigners' \"invasion\" of Little Red Book, deep seek fire, and Nezha 2 sweeping across China and even the world.",
+  "8": "However, human growth is always accompanied by pain, and without hardship, one cannot grow, just like during the time at Meituan and without working, they were really just slacking off every day. So take it slow, do the things in front of you well, and gradually you will find that the farther you go, the higher you climb.",
+  "9": "I'm back",
+  "10": "I'm back, I need to make some changes. As for the summary of 24 years and the plan for 25 years, they will be presented in a few days. By the way, there are also XHS internship gains, which probably won't be so fast after all, they are still working, but they will also be shared in the weekly magazine. Speaking of the weekly magazine, it will definitely be restored and updated, becoming a 2-week and 1.5-week magazine 😁😁。",
+  "11": "There are also blogs and scaffolding, which should have been my biggest motivation for writing articles, but they have become my resistance. The main reason is that they are difficult to maintain, and when I write, I desperately add features. Now, I can't make any changes to these mistakes. So:",
+  "12": "First, remove the damn translation. When it comes to translation, I will do it myself bit by bit. Full automation is too limited.",
+  "13": "Adjust the blog system, fix some bugs, remove third-party libraries with poor stability, and reduce maintenance costs.",
+  "14": "Scaffold optimization only involves compilation and creation, and even deletion is not very useful.",
+  "15": "Sometimes, blindly pursuing automation and convenience doesn't seem to be as fast as we see in the end, and there are also many other things we do after finishing each time."
+}
