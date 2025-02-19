@@ -15,49 +15,51 @@ export default async function Page({
   params: { language: string };
 }) {
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const { t } = await useTranslation(language, "essay-YBG-第十九期");
+  const { t } = await useTranslation(language, "essay-YBG-第二十六期");
   return (
     <div>
     <div className="mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">
     <span className="text-4xl text-left lg:px-20 md:px-[2.5vw] px-4 pt-12 text-visit-font font-bold">
-      YBG-第十九期
+      YBG-第二十六期
     </span>
     <span className="text-[#86909C] lg:px-20 pt-5 px-4 text-xl mb-5 md:px-[2.5vw]">
-      Categories: Weekly &nbsp;  2024-09-01
+      Categories: Weekly &nbsp;  2024-12-29
     </span>
     <div className="flex text-start break-words flex-col pb-12 lg:px-20 lg:w-[740px] md:w-[90vw] md:px-[2.5vw] w-[95vw] px-[2.5vw]">
       <blockquote>
 <p>{t("0")}</p>
 </blockquote>
-<h2>{t("1")}</h2>
+<p>{t("1")}</p>
+<p>{t("2")}</p>
+<h1>{t("3")}</h1>
 <ol>
 <li>
-<p><a href="http://kaito-kidd.com/2021/10/15/what-is-the-multi-site-high-availability-design/">{t("2")}</a>{t("3")}</p>
+<p><a href="https://jsdevspace.substack.com/p/13-super-useful-chrome-plugins-for">{t("4")}</a></p>
 </li>
 <li>
-<p><a href="https://jonny-wei.github.io/blog/mobile/">{t("4")}</a>{t("5")}</p>
+<p><a href="https://github.com/web-infra-dev/midscene/blob/main/README.zh.md">{t("5")}</a></p>
 </li>
 <li>
-<p><a href="https://giscus.app/zh-CN">{t("6")}</a>{t("7")}</p>
+<p>{t("6")}</p>
+<p><a href="https://github.com/WCY-dt/my-github-2024">{t("7")}</a></p>
 </li>
 <li>
-<p><a href="https://www.ruanyifeng.com/blog/">{t("8")}</a>{t("9")}</p>
-</li>
-<li>
-<p><a href="https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/%E8%B6%85%E7%BA%A7%E8%AE%BF%E8%B0%88%EF%BC%9A%E5%AF%B9%E8%AF%9D%E5%BC%A0%E9%9B%AA%E5%B3%B0">{t("10")}</a>{t("11")}</p>
-</li>
-<li>
-<p><a href="https://nextjs.org/conf">{t("12")}</a>{t("13")}</p>
+<p><a href="https://github.com/gsidhu/buzee-tauri">{t("8")}</a></p>
 </li>
 </ol>
-<h2>{t("14")}</h2>
-<p>{t("15")}<strong>{t("16")}</strong>{t("17")}</p>
+<h1>{t("9")}</h1>
+<p>{t("10")}</p>
+<p>{t("11")}</p>
+<p>{t("12")}</p>
+<p>{t("13")}</p>
+<p>{t("14")}</p>
+<p>{t("15")}</p>
+<p>{t("16")}</p>
+<p>{t("17")}</p>
 <p>{t("18")}</p>
-<p>{t("19")}<strong>{t("20")}</strong>{t("21")}</p>
+<h1>{t("19")}</h1>
+<p>{t("20")}<a href="https://lucasfcosta.com/2017/02/17/JavaScript-Errors-and-Stack-Traces.html">{t("21")}</a></p>
 <p>{t("22")}</p>
-<h2>{t("23")}</h2>
-<p>{t("24")}<code>giscus</code>{t("25")}</p>
-<p>{t("26")}<code>AST</code>{t("27")}</p>
     </div>
     
   </div>

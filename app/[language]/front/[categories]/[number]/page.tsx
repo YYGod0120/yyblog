@@ -9,6 +9,7 @@ export default async function Home({
 }: {
   params: Record<"language" | "number" | "categories", string>;
 }) {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { t } = await useTranslation(language, "translation");
   const pageNumber = parseInt(number);
   const noWeeklyData =
