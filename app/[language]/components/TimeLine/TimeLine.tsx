@@ -1,8 +1,8 @@
 import "./TimeLine.css";
 import { useTranslation } from "@/app/i18n";
 export async function TimeLine({ language }: { language: string }) {
-  console.log(language);
-
+  
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { t } = await useTranslation(language, "timeline");
   return (
     <div className="timeline">

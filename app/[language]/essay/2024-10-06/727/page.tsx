@@ -25,6 +25,7 @@ export default async function Page({
 }: {
   params: { language: string };
 }) {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { t } = await useTranslation(language, "essay-昌城美游");
   return (
     <div>

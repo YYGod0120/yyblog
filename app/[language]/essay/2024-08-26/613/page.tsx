@@ -15,6 +15,7 @@ export default async function Page({
   const Comment = dynamic(() => import("@/app/[language]/components/Comment"), {
     ssr: false,
   });
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { t } = await useTranslation(language, "essay-YBG-第十八期");
   return (
     <div>
