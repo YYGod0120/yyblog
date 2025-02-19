@@ -6,6 +6,7 @@ import { useTranslation } from "@/app/i18n";
 
 export default async function Tags({ language }: { language: string }) {
   const tags = countCategories(DATA);
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { t } = await useTranslation(language, "translation");
   return (
     <div className="mb-5 mt-5 flex cursor-default flex-row">

@@ -30,6 +30,7 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { language: string };
 }) {
+   // eslint-disable-next-line react-hooks/rules-of-hooks
   const { t } = await useTranslation(language);
   const defaultTags: Tag[] = [
     {
