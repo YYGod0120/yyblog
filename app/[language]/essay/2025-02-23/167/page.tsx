@@ -86,7 +86,7 @@ if \(arguments\.length \=\=\= 3\) \{
 ` }</SyntaxHighlighter>
 <p>另一个是 ssfi ，全称叫做"Start Stack Function Indicator"，配合上lockSsfi，Chai就可以在单测函数未通过测试抛出的错误的堆栈追踪中剪去没必要的函数内容，比如 Chai 内部的实现以及一些库函数。</p>
 <blockquote>
-<p>更具体的 Chai 相关部分可以看-> <a href="https://lucasfcosta.com/2017/02/17/JavaScript-Errors-and-Stack-Traces.html">https://lucasfcosta.com/2017/02/17/JavaScript-Errors-and-Stack-Traces.html</a></p>
+<p>更具体的 Chai 相关部分可以看&gt; <a href="https://lucasfcosta.com/2017/02/17/JavaScript-Errors-and-Stack-Traces.html">https://lucasfcosta.com/2017/02/17/JavaScript-Errors-and-Stack-Traces.html</a></p>
 </blockquote>
 </li>
 </ul>
