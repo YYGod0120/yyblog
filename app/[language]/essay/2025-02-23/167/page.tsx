@@ -84,7 +84,7 @@ if \(arguments\.length \=\=\= 3\) \{
 \}
 \}
 ` }</SyntaxHighlighter>
-<p>另一个是 ssfi ，全称叫做"Start Stack Function Indicator"，配合上lockSsfi，Chai就可以在单测函数未通过测试抛出的错误的堆栈追踪中剪去没必要的函数内容，比如 Chai 内部的实现以及一些库函数。</p>
+<p>另一个是 ssfi ，全称叫做&quot;Start Stack Function Indicator&quot;，配合上lockSsfi，Chai就可以在单测函数未通过测试抛出的错误的堆栈追踪中剪去没必要的函数内容，比如 Chai 内部的实现以及一些库函数。</p>
 <blockquote>
 <p>更具体的 Chai 相关部分可以看&gt; <a href="https://lucasfcosta.com/2017/02/17/JavaScript-Errors-and-Stack-Traces.html">https://lucasfcosta.com/2017/02/17/JavaScript-Errors-and-Stack-Traces.html</a></p>
 </blockquote>
@@ -119,8 +119,8 @@ function shouldGetter\(\) \{
   \}
 ` }</SyntaxHighlighter>
 <blockquote>
-<p>foo.should.be.a('string'),foo.should.equal('bar')
-expect(answer).to.equal(42),expect(answer, 'topic [answer]').to.equal(42);</p>
+<p>foo.should.be.a(&apos;string&apos;),foo.should.equal(&apos;bar&apos;)
+expect(answer).to.equal(42),expect(answer, &apos;topic [answer]&apos;).to.equal(42);</p>
 </blockquote>
 <p>should和expect的写法更加的语义化，更符合 BDD 风格。自然写法也比assert来的繁琐一些。
 接下来就是很重要的 API 部分的内容，也是区分 BDD 和 TDD 的一大特点。</p>
