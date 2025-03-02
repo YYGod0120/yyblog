@@ -15,7 +15,7 @@ export default async function Page({
 }: {
   params: { language: string };
 }) {
-  const { t } = await useTranslation(language, "essay-我的2024");
+  // const { t } = await useTranslation(language, "essay-我的2024");
   return (
     <div>
     <div className="mt-8 bg-white flex flex-col items-start text-lg shadow-lg rounded-sm">
